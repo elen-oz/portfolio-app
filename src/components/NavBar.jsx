@@ -26,6 +26,7 @@ function NavBar() {
       <ul className='hidden md:flex'>
         <li>
           <Link
+            className='hover:border-b-2 hover:border-red-900'
             to='home'
             smooth={true}
             duration={500}
@@ -35,6 +36,7 @@ function NavBar() {
         </li>
         <li>
           <Link
+            className='hover:border-b-2 hover:border-red-900'
             to='about'
             smooth={true}
             duration={500}
@@ -44,6 +46,7 @@ function NavBar() {
         </li>
         <li>
           <Link
+            className='hover:border-b-2 hover:border-red-900'
             to='skills'
             smooth={true}
             duration={500}
@@ -53,6 +56,7 @@ function NavBar() {
         </li>
         <li>
           <Link
+            className='hover:border-b-2 hover:border-red-900'
             to='work'
             smooth={true}
             duration={500}
@@ -62,6 +66,7 @@ function NavBar() {
         </li>
         <li>
           <Link
+            className='hover:border-b-2 hover:border-red-900'
             to='contact'
             smooth={true}
             duration={500}
@@ -74,7 +79,7 @@ function NavBar() {
       {/* hamburger */}
       <div
         onClick={handleClick}
-        className='md:hidden z-10'
+        className='md:hidden z-10 hover:text-red-900'
       >
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
@@ -87,11 +92,11 @@ function NavBar() {
             : 'absolute top-0 left-0 w-full h-screen bg-neutral-50 flex flex-col justify-center items-center'
         }
       >
-        <li className='py-6 text-4xl'>Home</li>
-        <li className='py-6 text-4xl'>About</li>
-        <li className='py-6 text-4xl'>Skills</li>
-        <li className='py-6 text-4xl'>Work</li>
-        <li className='py-6 text-4xl'>Contact</li>
+        <li className='py-6 text-4xl hover:text-red-900'>Home</li>
+        <li className='py-6 text-4xl hover:text-red-900'>About</li>
+        <li className='py-6 text-4xl hover:text-red-900'>Skills</li>
+        <li className='py-6 text-4xl hover:text-red-900'>Work</li>
+        <li className='py-6 text-4xl hover:text-red-900'>Contact</li>
       </ul>
 
       {/* social icons */}
