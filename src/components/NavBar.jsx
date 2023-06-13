@@ -11,13 +11,14 @@ function NavBar() {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-stone-200 text-stone-600'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-neutral-50 text-neutral-700'>
       <div>
         <img
           src={Logo}
           alt='Logo Image'
           style={{ width: '80px' }}
         />
+        {/* #7f1d1d -- red-900 */}
       </div>
 
       {/* menu */}
@@ -42,7 +43,7 @@ function NavBar() {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-stone-200 flex flex-col justify-center items-center'
+            : 'absolute top-0 left-0 w-full h-screen bg-neutral-50 flex flex-col justify-center items-center'
         }
       >
         <li className='py-6 text-4xl'>Home</li>
@@ -53,9 +54,9 @@ function NavBar() {
       </ul>
 
       {/* social icons */}
-      <div className='flex fixed flex-col top-[35%] left-0'>
+      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-neutral-50'>
             <a
               className='flex justify-between items-center w-full'
               href='/'
@@ -64,7 +65,7 @@ function NavBar() {
             </a>
           </li>
 
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-neutral-50'>
             <a
               className='flex justify-between items-center w-full'
               href='/'
@@ -73,7 +74,7 @@ function NavBar() {
             </a>
           </li>
 
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-neutral-50'>
             <a
               className='flex justify-between items-center w-full'
               href='/'
@@ -82,7 +83,7 @@ function NavBar() {
             </a>
           </li>
 
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-neutral-50'>
             <a
               className='flex justify-between items-center w-full'
               href='/'
