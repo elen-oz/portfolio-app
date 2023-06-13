@@ -100,12 +100,14 @@ function NavBar() {
       </ul>
 
       {/* social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+      <div className='hidden md:flex fixed flex-col top-[35%] left-0'>
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-neutral-50'>
             <a
-              className='flex justify-between items-center w-full'
-              href='/'
+              className='flex justify-between items-center w-full text-red-900'
+              href='https://www.linkedin.com/in/elen-oz/'
+              target='_blank'
+              rel='noreferrer'
             >
               Linlkedin <FaLinkedin size={30} />
             </a>
@@ -113,8 +115,10 @@ function NavBar() {
 
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-neutral-50'>
             <a
-              className='flex justify-between items-center w-full'
-              href='/'
+              className='flex justify-between items-center w-full text-red-900'
+              href='https://github.com/elen-oz'
+              target='_blank'
+              rel='noreferrer'
             >
               Github <FaGithub size={30} />
             </a>
@@ -122,21 +126,25 @@ function NavBar() {
 
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-neutral-50'>
             <a
-              className='flex justify-between items-center w-full'
-              href='/'
+              className='flex justify-between items-center w-full text-red-900'
+              href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
             >
               Email <HiOutlineMail size={30} />
             </a>
           </li>
 
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-neutral-50'>
+          {/* ! WARN: does not work -- check it */}
+
+          {/* <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-neutral-50'>
             <a
-              className='flex justify-between items-center w-full'
-              href='/'
+              className='flex justify-between items-center w-full text-red-900'
+              href='../assets/Elena-O_CV.pdf'
+              target='_blank'
+              download='Elena-O_CV.pdf'
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>
