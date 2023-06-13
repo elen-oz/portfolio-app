@@ -17,7 +17,7 @@ const Home = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repel repudiandae, dolorem ea?
         </p>
         <div>
-          <button className='text-neutral-800 group border-2 px-6 py-3 my-2 flex items-center hover:text-stone-50 hover:bg-red-900 hover:border-red-900'>
+          <button className='text-neutral-800 group border-2 px-6 py-3 my-2 flex items-center border-red-900 hover:text-stone-50 hover:bg-red-900 hover:border-red-900'>
             View Work
             <span className='group-hover:rotate-90 duration-300'>
               <HiArrowNarrowRight className='ml-3' />
@@ -30,3 +30,14 @@ const Home = () => {
 };
 
 export default Home;
+{
+  /* colors:
+  bg-neutral-50
+
+  #7f1d1d -- red-900
+  text-neutral-800
+  text-neutral-600
+
+  #CCb91c1c -- red-700
+   */
+}
