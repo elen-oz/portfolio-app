@@ -29,7 +29,7 @@ function NavBar() {
       {/* hamburger */}
       <div
         onClick={handleClick}
-        className='md:hidden'
+        className='md:hidden z-10'
       >
         <FaBars />
       </div>
@@ -39,7 +39,7 @@ function NavBar() {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 h-screen bg-stone-100 flex flex-col justify-center items-center'
+            : 'absolute top-0 left-0 w-full h-screen bg-stone-100 flex flex-col justify-center items-center'
         }
       >
         <li className='py-6 text-4xl'>Home</li>
