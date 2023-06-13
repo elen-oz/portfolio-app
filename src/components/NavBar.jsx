@@ -1,6 +1,9 @@
 import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import Logo from '../assets/logo_dark1.png';
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+
+import Logo from '../assets/logo_dark2.png';
 
 function NavBar() {
   const [nav, setNav] = useState(false);
@@ -8,12 +11,12 @@ function NavBar() {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-stone-100 text-stone-500'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-stone-100 text-stone-600'>
       <div>
         <img
           src={Logo}
           alt='Logo Image'
-          style={{ width: '150px' }}
+          style={{ width: '80px' }}
         />
       </div>
 
@@ -31,7 +34,7 @@ function NavBar() {
         onClick={handleClick}
         className='md:hidden z-10'
       >
-        <FaBars />
+        {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
       {/* mobile menu */}
@@ -50,7 +53,18 @@ function NavBar() {
       </ul>
 
       {/* social icons */}
-      <div className='hidden'></div>
+      <div className='flex fixed flex-col top-[35%] left-0'>
+        <ul>
+          <li className='w-[160px] h-[60px] flex justify-between items-center'>
+            <a
+              className='flex justify-between items-center w-full'
+              href='/'
+            >
+              Linlkedin <FaLinkedin size={30} />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
