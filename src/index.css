@@ -13,3 +13,25 @@
     @apply cursor-pointer;
   }
 }
+.content-div {
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
+  background-size: cover;
+  background-position: center;
+  max-height: 250px;
+  /* max-width: 100%; */
+}
+
+.content-div:hover {
+  background-image: linear-gradient(
+    to right,
+    rgba(64, 64, 64, 0.8),
+    hsla(0, 63%, 31%, 0.8)
+  ) !important;
+}
+
+/* rgba(64, 64, 64, 0.8),
+hsla(0, 0%, 45%, 0.8) 
+
+rgb(127, 29, 29, 0.8)
+hsla(0, 63%, 31%, 0.8)*/
