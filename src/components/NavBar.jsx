@@ -13,27 +13,22 @@ function NavBar() {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-neutral-50 text-neutral-700'>
-      <div>
-        <img
-          src={Logo}
-          alt='Logo Image'
-          style={{ width: '80px' }}
-        />
-        {/* #7f1d1d -- red-900 */}
+      <div className='hover:cursor-pointer'>
+        <Link
+          to='home'
+          smooth={true}
+          duration={500}
+        >
+          <img
+            src={Logo}
+            alt='Logo Image'
+            style={{ width: '80px' }}
+          />
+        </Link>
       </div>
 
       {/* menu */}
       <ul className='hidden md:flex'>
-        <li>
-          <Link
-            className='hover:border-b-2 hover:border-red-900'
-            to='home'
-            smooth={true}
-            duration={500}
-          >
-            Home
-          </Link>
-        </li>
         <li>
           <Link
             className='hover:border-b-2 hover:border-red-900'
