@@ -1,10 +1,12 @@
-import React from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Contact = () => {
   return (
     <div
       name='contact'
-      className='w-full h-[calc(100vh-80px)] bg-neutral-50 text-neutral-800 flex justify-center items-center p-4'
+      className='w-full h-[calc(100vh-80px)] bg-neutral-50 text-neutral-800 flex flex-col justify-center items-center p-4'
     >
       <form
         method='POST'
@@ -37,6 +39,54 @@ const Contact = () => {
           Let's Collaborate
         </button>
       </form>
+
+      <div className='pt-[50px]'>
+        <ul className='flex flex-row'>
+          <li className='w-[200px] h-[90px] flex justify-between items-center bg-neutral-50'>
+            <a
+              className='flex justify-around items-center w-full text-red-900'
+              href='https://www.linkedin.com/in/elen-oz/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Linlkedin <FaLinkedin size={30} />
+            </a>
+          </li>
+
+          <li className='w-[200px] h-[90px] flex justify-between items-center  bg-neutral-50'>
+            <a
+              className='flex justify-around items-center w-full text-red-900'
+              href='https://github.com/elen-oz'
+              target='_blank'
+              rel='noreferrer'
+            >
+              Github <FaGithub size={30} />
+            </a>
+          </li>
+
+          <li className='w-[200px] h-[90px] flex justify-between items-center  bg-neutral-50'>
+            <a
+              className='flex justify-around items-center w-full text-red-900'
+              href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
+            >
+              Email <HiOutlineMail size={30} />
+            </a>
+          </li>
+
+          {/* ! WARN: does not work -- check it */}
+
+          {/* <li className='w-[200px] h-[90px] flex justify-between items-center  bg-neutral-50'>
+            <a
+              className='flex justify-around  items-center w-full text-red-900'
+              href='../assets/Elena-O_CV.pdf'
+              target='_blank'
+              download='Elena-O_CV.pdf'
+            >
+              Resume <BsFillPersonLinesFill size={30} />
+            </a>
+          </li> */}
+        </ul>
+      </div>
     </div>
   );
 };
