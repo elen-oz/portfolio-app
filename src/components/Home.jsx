@@ -14,7 +14,7 @@ const Home = () => {
           I'm a Frontend Developer
         </h2>
         <p className='text-neutral-600 py-4 max-w-[700px]'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repel repudiandae, dolorem ea?
+          An enthusiastic Frontend Developer based in Stockholm, Sweden.
         </p>
         <div>
           <button className='text-neutral-800 group border-2 px-6 py-3 my-2 flex items-center border-red-900 hover:text-stone-50 hover:bg-red-900 hover:border-red-900'>

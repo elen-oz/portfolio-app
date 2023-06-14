@@ -15,13 +15,16 @@ const About = () => {
         </div>
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
           <div className='sm:text-right text-4xl font-bold'>
-            <p>Hi, I'm Elena, nice to meet you. Please take a look around.</p>
+            <p className='text-neutral-600'>
+              Hi, I'm Elena, nice to meet you. Please take a look around.
+            </p>
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus vitae
-              exercitationem nobis quasi maxime dicta expedita recusandae minima excepturi nesciunt
-              pariatur aperiam ex, quod sit est, dolorum voluptas! Consequuntur, beatae!
+              Passionate and dedicated frontend developer with 11-month course completion and
+              ongoing skill development. Expertise in React, JavaScript, ensuring efficient and
+              effective development. Let's collaborate and create stunning digital applications!
+              Contact me now.
             </p>
           </div>
         </div>
