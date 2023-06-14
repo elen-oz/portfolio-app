@@ -13,16 +13,18 @@ function NavBar() {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-neutral-50 text-neutral-700'>
-      <div className='hover:cursor-pointer'>
+      {/* logo */}
+      <div className='hover:cursor-pointer p-[10px] ml-[20px]'>
         <Link
           to='home'
           smooth={true}
           duration={500}
         >
           <img
+            className=' mt-[40px]'
             src={Logo}
             alt='Logo Image'
-            style={{ width: '80px' }}
+            style={{ width: '100px' }}
           />
         </Link>
       </div>

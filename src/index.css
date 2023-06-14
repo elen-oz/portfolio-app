@@ -17,9 +17,8 @@
   background-repeat: no-repeat;
   /* object-fit: cover; */
   background-size: cover;
-  background-position: center;
+  background-position: top;
   max-height: 250px;
-  /* max-width: 100%; */
 }
 
 .content-div:hover {

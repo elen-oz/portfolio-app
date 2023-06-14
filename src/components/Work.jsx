@@ -30,10 +30,10 @@ const Work = () => {
               <div className='opacity-0 group-hover:opacity-50 transition'>
                 <span className='text-2xl font bold text-white tracking-wider '>{item.name}</span>
                 <div className='pt-8 text-center '>
-                  {/* eslint-disable-next-line */}
                   <a
                     href={item.github}
                     target='_blank'
+                    rel='noreferrer'
                   >
                     <button
                       className='text-center rounded-lg px-4 py-3 m-2
@@ -42,10 +42,11 @@ const Work = () => {
                       Code
                     </button>
                   </a>
-                  {/* eslint-disable-next-line */}
+
                   <a
                     href={item.live}
                     target='_blank'
+                    rel='noreferrer'
                   >
                     <button
                       className='text-center rounded-lg px-4 py-3 m-2
