@@ -38,6 +38,5 @@ export default Home;
   text-neutral-800
   text-neutral-600
 
-  #CCb91c1c -- red-700
    */
 }
