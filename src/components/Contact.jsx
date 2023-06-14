@@ -43,34 +43,52 @@ const Contact = () => {
       <div className='pt-[50px]'>
         <ul className='flex flex-row'>
           <li className='w-[200px] h-[90px] flex justify-between items-center bg-neutral-50'>
-            <a
-              className='flex justify-around items-center w-full text-red-900'
-              href='https://www.linkedin.com/in/elen-oz/'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Linlkedin <FaLinkedin size={30} />
-            </a>
+            <div className='flex justify-center items-center w-full text-red-900  hover:scale-110 duration-500'>
+              <a
+                className='flex items-center p-[10px]'
+                href='https://www.linkedin.com/in/elen-oz/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Linlkedin
+                <FaLinkedin
+                  size={30}
+                  className='ml-[20px]'
+                />
+              </a>
+            </div>
+          </li>
+
+          <li className='w-[200px] h-[90px] flex items-center  bg-neutral-50'>
+            <div className='flex justify-center items-center w-full text-red-900  hover:scale-110 duration-500'>
+              <a
+                className='flex items-center p-[10px]'
+                href='https://github.com/elen-oz'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Github
+                <FaGithub
+                  size={30}
+                  className='ml-[20px]'
+                />
+              </a>
+            </div>
           </li>
 
           <li className='w-[200px] h-[90px] flex justify-between items-center  bg-neutral-50'>
-            <a
-              className='flex justify-around items-center w-full text-red-900'
-              href='https://github.com/elen-oz'
-              target='_blank'
-              rel='noreferrer'
-            >
-              Github <FaGithub size={30} />
-            </a>
-          </li>
-
-          <li className='w-[200px] h-[90px] flex justify-between items-center  bg-neutral-50'>
-            <a
-              className='flex justify-around items-center w-full text-red-900'
-              href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
-            >
-              Email <HiOutlineMail size={30} />
-            </a>
+            <div className='flex justify-center items-center w-full text-red-900  hover:scale-110 duration-500'>
+              <a
+                className='flex items-center p-[10px]'
+                href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
+              >
+                mail
+                <HiOutlineMail
+                  size={30}
+                  className='ml-[20px]'
+                />
+              </a>
+            </div>
           </li>
 
           {/* ! WARN: does not work -- check it */}
