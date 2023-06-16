@@ -30,13 +30,3 @@ const Home = () => {
 };
 
 export default Home;
-{
-  /* colors:
-  bg-neutral-50
-
-  #7f1d1d -- red-900
-  text-neutral-800
-  text-neutral-600
-
-   */
-}
