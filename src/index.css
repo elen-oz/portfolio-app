@@ -21,7 +21,7 @@
   /* object-fit: cover; */
   background-size: cover;
   background-position: top;
-  max-height: 250px;
+  max-height: 150px;
 }
 
 .content-div:hover {
