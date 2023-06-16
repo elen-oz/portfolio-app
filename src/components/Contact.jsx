@@ -2,14 +2,14 @@ const Contact = () => {
   return (
     <div
       name='contact'
-      className='container w-full h-screen bg-neutral-50 text-neutral-800 flex flex-col justify-center items-center'
+      className='container max-w-[1000px] h-screen flex flex-col justify-center items-center mx-auto'
     >
       <form
         method='POST'
         action='https://getform.io/f/21360c24-1f34-4019-8448-c3a4edffd8e2'
-        className='flex flex-col max-w-[600px] w-full'
+        className='flex flex-col max-w-[600px] w-full my-0'
       >
-        <div className=''>
+        <div>
           <p className='text-4xl font-bold inline border-b-4 border-red-900'>Contact</p>
           <p className='py-4'>&#47;&#47; Submit the form below to contact me</p>
         </div>

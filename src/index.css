@@ -7,6 +7,9 @@
 @layer base {
   body {
     @apply font-[Lexend];
+    /* @apply bg-neutral-50; */
+    @apply bg-stone-50;
+    @apply text-neutral-800;
   }
   li {
     @apply px-4;

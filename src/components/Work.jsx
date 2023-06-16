@@ -6,14 +6,12 @@ const Work = () => {
   return (
     <div
       name='work'
-      className='w-full md:h-screen bg-neutral-50 text-neutral-800'
+      className='w-full md:h-screen'
     >
       {/* container */}
       <div className='container max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
-          <p className='text-4xl fonr-bold inline border-b-4 text-neutral-800 border-red-900'>
-            Work
-          </p>
+          <p className='text-4xl fonr-bold inline border-b-4 border-red-900'>Work</p>
           <p className='py-6'>&#47;&#47; Check out some of my recent work</p>
         </div>
 
