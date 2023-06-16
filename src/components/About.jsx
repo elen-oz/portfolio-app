@@ -1,5 +1,3 @@
-import React from 'react';
-
 const About = () => {
   return (
     <div
@@ -17,14 +15,15 @@ const About = () => {
         <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8'>
           <div className='sm:text-right text-4xl font-bold'>
             <p className='text-neutral-600'>
-              Hi, I'm Elena, nice to meet you. Please take a look around.
+              Hi, I&apos;m Elena, nice to meet you. Please take a look around.
             </p>
           </div>
           <div>
             <p>
               Passionate and dedicated frontend developer with 11-month course completion and
               ongoing skill development. Expertise in React, JavaScript, ensuring efficient and
-              effective development. Let's collaborate and create stunning digital applications!
+              effective development. Let&apos;s collaborate and create stunning digital
+              applications!
             </p>
           </div>
         </div>
