@@ -10,7 +10,7 @@ const Contact = () => {
     // >
     <div
       name='contact'
-      className='w-full h-screen bg-neutral-50 text-neutral-800 flex flex-col justify-center items-center'
+      className='container w-full h-screen bg-neutral-50 text-neutral-800 flex flex-col justify-center items-center'
     >
       <form
         method='POST'
