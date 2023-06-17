@@ -11,7 +11,7 @@ const Work = () => {
       {/* container */}
       <div className='container max-w-[1000px] mx-auto flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
-          <p className='text-4xl fonr-bold inline border-b-4 border-red-900'>Work</p>
+          <p className='text-4xl font-bold inline border-b-4 border-red-900'>Work</p>
           <p className='py-6'>&#47;&#47; Check out some of my recent work</p>
         </div>
 
