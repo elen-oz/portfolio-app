@@ -12,22 +12,7 @@ function NavBar() {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 text-neutral-700 bg-stone-50'>
-      {/* Logo */}
-      <div className='hover:cursor-pointer p-[10px] ml-[20px]'>
-        <Link
-          to='home'
-          smooth={true}
-          duration={500}
-        >
-          <img
-            src={Logo}
-            alt='Logo Image'
-            style={{ width: '100px' }}
-          />
-        </Link>
-      </div>
-
+    <div className='fixed w-full h-[80px] flex md:justify-end sm:justify-between items-center px-4 text-neutral-700 bg-stone-50'>
       {/* Social Links */}
       <ul className=' md:hidden flex flex-row'>
         <li className='flex justify-center items-center bg-neutral-50 px-0'>
@@ -112,12 +97,29 @@ function NavBar() {
         </li>
       </ul>
 
-      {/* Hamburger */}
-      <div
-        onClick={handleClick}
-        className='md:hidden z-10 hover:text-red-900 p-[10px]'
-      >
-        {!nav ? <FaBars /> : <FaTimes />}
+      <div className='flex justify-center items-center'>
+        {/* Logo */}
+        <div className='hover:cursor-pointer p-[10px] ml-[20px]'>
+          <Link
+            to='home'
+            smooth={true}
+            duration={500}
+          >
+            <img
+              src={Logo}
+              alt='Logo Image'
+              style={{ width: '100px' }}
+            />
+          </Link>
+        </div>
+
+        {/* Hamburger */}
+        <div
+          onClick={handleClick}
+          className='md:hidden z-10 hover:text-red-900 p-[10px]'
+        >
+          {!nav ? <FaBars /> : <FaTimes />}
+        </div>
       </div>
 
       {/* Mobile menu */}
