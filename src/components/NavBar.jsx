@@ -12,7 +12,7 @@ function NavBar() {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex md:justify-end sm:justify-between items-center px-4 text-neutral-700 bg-stone-50'>
+    <div className='fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700 bg-stone-50'>
       {/* Social Links */}
       <ul className=' md:hidden flex flex-row'>
         <li className='flex justify-center items-center bg-neutral-50 px-0'>
