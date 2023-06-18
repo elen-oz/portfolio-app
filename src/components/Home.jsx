@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 
 const Home = () => {
@@ -17,12 +18,18 @@ const Home = () => {
           An enthusiastic Frontend Developer based in Stockholm, Sweden.
         </p>
         <div>
-          <button className='group border-2 px-6 py-3 my-2 flex items-center border-red-900 hover:text-stone-50 hover:bg-red-900 hover:border-red-900'>
-            View Work
-            <span className='group-hover:rotate-90 duration-300'>
-              <HiArrowNarrowRight className='ml-3' />
-            </span>
-          </button>
+          <Link
+            to='work'
+            smooth={true}
+            duration={500}
+          >
+            <button className='group border-2 px-6 py-3 my-2 flex items-center border-red-900 hover:text-stone-50 hover:bg-red-900 hover:border-red-900'>
+              View Work
+              <span className='group-hover:rotate-90 duration-300'>
+                <HiArrowNarrowRight className='ml-3' />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
