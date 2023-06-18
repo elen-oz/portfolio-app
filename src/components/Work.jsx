@@ -1,4 +1,5 @@
 import data from '../data/data';
+import Carusel from './Carousel';
 
 const Work = () => {
   return (
@@ -13,16 +14,13 @@ const Work = () => {
           <p className='py-6'>&#47;&#47; Check out some of my recent work</p>
         </div>
 
-        {/* container for projects */}
         <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-          {/* ---grid item--- */}
           {data.map((item, index) => (
             <div
               key={index}
               style={{ backgroundImage: `url(${item.image})` }}
               className='shadow-lg shadow-[#dcdcdc] group container rounded-sm flex justify-center text-center items-center mx-auto content-div px-2 py-5'
             >
-              {/* hover effects for images */}
               <div className='opacity-0 group-hover:opacity-50 transition'>
                 <span className='text-xl font bold text-white tracking-wider '>{item.name}</span>
                 <div className='text-center'>
@@ -57,6 +55,23 @@ const Work = () => {
           ))}
         </div>
       </div>
+
+      {/* CAROUSEL */}
+      {/* <div className='container max-w-[900px] mx-auto flex flex-col justify-center w-full h-full'>
+        <div className='w-3/4 mx-auto '>
+          <Carusel>
+            {data.map((item) => (
+              <img
+                key={item.id}
+                className='relative'
+                src={item.image}
+              />
+            ))}
+          </Carusel>
+        </div>
+
+        <div className='max-w-md'></div>
+      </div> */}
     </div>
   );
 };
