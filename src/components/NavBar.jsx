@@ -8,6 +8,10 @@ import { Link } from 'react-scroll';
 import Resume from '../assets/Elena-O_CV.pdf';
 import Logo from '../assets/logo_dark2.png';
 
+// const { darkMode } = useTheme();
+
+// dark:bg-sky-950 dark:text-neutral-300
+
 function NavBar() {
   const [nav, setNav] = useState(false);
 
