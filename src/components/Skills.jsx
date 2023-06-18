@@ -23,7 +23,7 @@ const Skills = () => {
         </div>
 
         <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8'>
-          <div className='shadow-md shadow-[#dcdcdc] hover:scale-110 duration-500'>
+          <div className='rounded-sm  shadow-md shadow-[#dcdcdc] hover:scale-110 duration-500'>
             <img
               className='w-20 mx-auto'
               src={Html}
@@ -32,7 +32,7 @@ const Skills = () => {
             <p className='my-4'>HTML</p>
           </div>
 
-          <div className='shadow-md shadow-[#dcdcdc] hover:scale-110 duration-500'>
+          <div className='rounded-sm shadow-md shadow-[#dcdcdc] hover:scale-110 duration-500'>
             <img
               className='w-20 mx-auto'
               src={Css}
@@ -41,7 +41,7 @@ const Skills = () => {
             <p className='my-4'>CSS</p>
           </div>
 
-          <div className='shadow-md shadow-[#dcdcdc] hover:scale-110 duration-500'>
+          <div className='rounded-sm shadow-md shadow-[#dcdcdc] hover:scale-110 duration-500'>
             <img
               className='w-20 mx-auto'
               src={Javascript}
@@ -50,7 +50,7 @@ const Skills = () => {
             <p className='my-4'>JAVASCRIPT</p>
           </div>
 
-          <div className='shadow-md shadow-[#dcdcdc] hover:scale-110 duration-500'>
+          <div className='rounded-sm shadow-md shadow-[#dcdcdc] hover:scale-110 duration-500'>
             <img
               className='w-20 mx-auto'
               src={ReactImg}
@@ -59,7 +59,7 @@ const Skills = () => {
             <p className='my-4'>REACT</p>
           </div>
 
-          <div className='shadow-md shadow-[#dcdcdc] hover:scale-110 duration-500'>
+          <div className='rounded-sm shadow-md shadow-[#dcdcdc] hover:scale-110 duration-500'>
             <img
               className='w-20 mx-auto'
               src={Github}
