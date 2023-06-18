@@ -27,7 +27,7 @@ function NavBar() {
   return (
     <div className={darkMode ? 'dark' : ''}>
       <div className='fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700 bg-stone-50 dark:bg-sky-950 dark:text-neutral-300'>
-        {/* Social Links */}
+        {/* Social Links Header */}
         <ul className='md:hidden flex flex-row'>
           <li className='flex justify-center items-center px-0'>
             <div className='flex justify-center items-center w-full text-red-900 dark:text-neutral-300  hover:scale-110 duration-500'>
@@ -67,7 +67,7 @@ function NavBar() {
           </li>
         </ul>
 
-        {/* Head Menu */}
+        {/* Header Menu */}
         <ul className='hidden md:flex'>
           {/* <li className='flex justify-center items-center'>
             <CgDarkMode onClick={handleMode} />
@@ -148,10 +148,10 @@ function NavBar() {
           className={
             !nav
               ? 'hidden'
-              : 'absolute top-[80px] right-0 w-1/3 h-screen flex flex-col justify-center items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
+              : 'absolute top-[80px] right-0 w-1/3 h-screen flex flex-col justify-start items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
           }
         >
-          <li className='py-6 text-4xl hover:text-red-900'>
+          <li className='py-6 text-3xl hover:text-red-900'>
             <Link
               onClick={handleClick}
               to='home'
@@ -161,7 +161,7 @@ function NavBar() {
               Home
             </Link>
           </li>
-          <li className='py-6 text-4xl hover:text-red-900'>
+          <li className='py-6 text-3xl hover:text-red-900'>
             <Link
               onClick={handleClick}
               to='about'
@@ -171,7 +171,7 @@ function NavBar() {
               About
             </Link>
           </li>
-          <li className='py-6 text-4xl hover:text-red-900'>
+          <li className='py-6 text-3xl hover:text-red-900'>
             <Link
               onClick={handleClick}
               to='skills'
@@ -181,7 +181,7 @@ function NavBar() {
               Skills
             </Link>
           </li>
-          <li className='py-6 text-4xl hover:text-red-900'>
+          <li className='py-6 text-3xl hover:text-red-900'>
             <Link
               onClick={handleClick}
               to='work'
@@ -191,7 +191,7 @@ function NavBar() {
               Work
             </Link>
           </li>
-          <li className='py-6 text-4xl hover:text-red-900'>
+          <li className='py-6 text-3xl hover:text-red-900'>
             <Link
               onClick={handleClick}
               to='contact'
