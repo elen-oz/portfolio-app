@@ -69,9 +69,9 @@ function NavBar() {
 
         {/* Menu */}
         <ul className='hidden md:flex'>
-          <li className='flex justify-center items-center'>
+          {/* <li className='flex justify-center items-center'>
             <CgDarkMode onClick={handleMode} />
-          </li>
+          </li> */}
           <li>
             <Link
               className='hover:border-b-2 hover:border-red-900'
@@ -115,6 +115,9 @@ function NavBar() {
         </ul>
 
         <div className='flex justify-center items-center'>
+          <div className='flex justify-center items-center ml-[20px]'>
+            <CgDarkMode onClick={handleMode} />
+          </div>
           {/* Logo */}
           <div className='hover:cursor-pointer p-[10px] ml-[20px]'>
             <Link
