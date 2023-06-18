@@ -26,7 +26,7 @@ function NavBar() {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className='fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700  dark:bg-sky-950 dark:text-neutral-300'>
+      <div className='fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700 bg-stone-50 dark:bg-sky-950 dark:text-neutral-300'>
         {/* Social Links */}
         <ul className='md:hidden flex flex-row'>
           <li className='flex justify-center items-center px-0'>
@@ -67,7 +67,7 @@ function NavBar() {
           </li>
         </ul>
 
-        {/* Menu */}
+        {/* Head Menu */}
         <ul className='hidden md:flex'>
           {/* <li className='flex justify-center items-center'>
             <CgDarkMode onClick={handleMode} />
@@ -118,6 +118,7 @@ function NavBar() {
           <div className='flex justify-center items-center ml-[20px]'>
             <CgDarkMode onClick={handleMode} />
           </div>
+
           {/* Logo */}
           <div className='hover:cursor-pointer p-[10px] ml-[20px]'>
             <Link
@@ -147,7 +148,7 @@ function NavBar() {
           className={
             !nav
               ? 'hidden'
-              : 'absolute top-0 right-0 w-1/3 h-screen flex flex-col justify-center items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
+              : 'absolute top-[80px] right-0 w-1/3 h-screen flex flex-col justify-center items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
           }
         >
           <li className='py-6 text-4xl hover:text-red-900'>
