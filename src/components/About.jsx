@@ -4,7 +4,7 @@ import { useTheme } from '../hooks/useTheme';
 
 // <div className={darkMode ? 'dark' : ''}></div>
 
-// dark:bg-sky-950 dark:text-neutral-300
+// dark:bg-gray-800 dark:text-neutral-300
 
 const About = () => {
   const { darkMode } = useTheme();
@@ -13,7 +13,7 @@ const About = () => {
     <div className={darkMode ? 'dark' : ''}>
       <div
         name='about'
-        className='w-full h-screen dark:bg-sky-950 dark:text-neutral-300'
+        className='w-full h-screen dark:bg-gray-800 dark:text-neutral-300'
       >
         {/* container-- */}
         <div className='container max-w-[900px] mx-auto flex flex-col justify-center items-center w-full h-full'>

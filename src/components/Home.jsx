@@ -4,7 +4,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 
 // const { darkMode } = useTheme();
 
-// dark:bg-sky-950 dark:text-neutral-300
+// dark:bg-gray-800 dark:text-neutral-300
 
 // <div className={darkMode ? 'dark' : ''}></div>
 
@@ -15,7 +15,7 @@ const Home = () => {
     <div className={darkMode ? 'dark' : ''}>
       <div
         name='home'
-        className='w-full h-screen dark:bg-sky-950 dark:text-neutral-300'
+        className='w-full h-screen dark:bg-gray-800 dark:text-neutral-300'
       >
         {/* container */}
         <div className='container max-w-[900px] mx-auto flex flex-col justify-center h-full'>

@@ -11,6 +11,7 @@ import Logo from '../assets/logo_dark2.png';
 // const { darkMode } = useTheme();
 
 // dark:bg-sky-950 dark:text-neutral-300
+// dark:bg-gray-800
 
 function NavBar() {
   const [nav, setNav] = useState(false);
@@ -26,7 +27,7 @@ function NavBar() {
 
   return (
     <div className={darkMode ? 'dark' : ''}>
-      <div className='fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700 bg-stone-50 dark:bg-sky-950 dark:text-neutral-300'>
+      <div className='fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700 bg-stone-50 dark:bg-gray-800 dark:text-neutral-300'>
         {/* -------------Social Links Header------------- */}
         <ul className='md:hidden flex flex-row'>
           <li className='flex justify-center items-center px-0'>
@@ -145,7 +146,7 @@ function NavBar() {
           className={
             !nav
               ? 'hidden'
-              : 'absolute top-[80px] right-0 w-1/3 h-screen flex flex-col justify-start items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
+              : 'absolute z-50 top-[80px] right-0 w-1/3 h-screen flex flex-col justify-start items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
           }
         >
           <li className='py-6 text-3xl hover:text-red-900'>
@@ -203,7 +204,7 @@ function NavBar() {
         {/* Social Icons on the left */}
         <div className='hidden md:flex fixed flex-col top-[35%] md:top-[14%] left-0'>
           <ul>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 dark:bg-sky-950 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='https://www.linkedin.com/in/elen-oz/'
@@ -214,7 +215,7 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 dark:bg-sky-950 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='https://github.com/elen-oz'
@@ -225,7 +226,7 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 dark:bg-sky-950 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
@@ -234,7 +235,7 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 dark:bg-sky-950 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href={Resume}

@@ -18,7 +18,7 @@ const Skills = () => {
     <div className={darkMode ? 'dark' : ''}>
       <div
         name='skills'
-        className='w-full h-screen dark:bg-sky-950 dark:text-neutral-300'
+        className='w-full h-screen dark:bg-gray-800 dark:text-neutral-300'
       >
         {/* container */}
         <div className='container max-w-[900px] mx-auto flex flex-col justify-center w-full h-full'>

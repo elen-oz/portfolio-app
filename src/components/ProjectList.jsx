@@ -17,7 +17,7 @@ const ProjectList = () => {
     <div className={darkMode ? 'dark' : ''}>
       <div
         name='work'
-        className='w-full md:h-screen dark:bg-sky-950 dark:text-neutral-300'
+        className='w-full md:h-screen dark:bg-gray-800 dark:text-neutral-300'
       >
         <div className='container max-w-[900px] mx-auto flex flex-col justify-center w-full h-full'>
           <div className='pb-8'>
@@ -32,7 +32,7 @@ const ProjectList = () => {
               <div
                 key={index}
                 style={{ backgroundImage: `url(${item.image})` }}
-                className='content-div group container mx-auto flex items-center justify-center rounded-md px-2  text-center shadow-lg shadow-[#dcdcdc] aspect-video group relative'
+                className='content-div group container mx-auto flex items-center justify-center rounded-md px-2  text-center shadow-lg shadow-[#dcdcdc] dark:shadow-gray-950 aspect-video group relative'
               >
                 {/* hover effects for images */}
                 <div className='opacity-0 group-hover:opacity-100'>
