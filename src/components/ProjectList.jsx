@@ -25,38 +25,43 @@ const ProjectList = () => {
               <div
                 key={index}
                 style={{ backgroundImage: `url(${item.image})` }}
-                className='shadow-lg shadow-[#dcdcdc] dark:shadow-gray-900 group container rounded-sm flex justify-center text-center items-center mx-auto content-div px-2 py-5'
+                className='content-div group container mx-auto flex items-center justify-center rounded-md px-2 py-5 text-center shadow-lg shadow-[#dcdcdc] aspect-video group relative'
               >
                 {/* hover effects for images */}
-                <div className='opacity-0 group-hover:opacity-50 transition'>
-                  <span className='text-xl font bold text-white tracking-wider '>{item.name}</span>
-                  <div className='text-center'>
-                    {/* <a
+                <div className='opacity-0 transition after:rounded-md after:transition-all after:duration-300 group-hover:opacity-100'>
+                  <div className='backdrop-blur-xl p-2 rounded-md transition transition-all duration-300'>
+                    <span className='text-xl font bold text-neutral-700 tracking-wider '>
+                      {item.name}
+                    </span>
+
+                    <div className='text-center'>
+                      {/* <a
                       href={item.github}
                       target='_blank'
                       rel='noreferrer'
                     > */}
-                    <button
-                      onClick={() => setShowModal(true)}
-                      className='text-center rounded-sm px-1 py-1 m-2
-                 bg-white text-gray-700 font-bold text-base'
-                    >
-                      Code
-                    </button>
-                    {/* </a> */}
-
-                    <a
-                      href={item.live}
-                      target='_blank'
-                      rel='noreferrer'
-                    >
                       <button
+                        onClick={() => setShowModal(true)}
                         className='text-center rounded-sm px-1 py-1 m-2
                  bg-white text-gray-700 font-bold text-base'
                       >
-                        Live
+                        Code
                       </button>
-                    </a>
+                      {/* </a> */}
+
+                      <a
+                        href={item.live}
+                        target='_blank'
+                        rel='noreferrer'
+                      >
+                        <button
+                          className='text-center rounded-sm px-1 py-1 m-2
+                 bg-white text-gray-700 font-bold text-base'
+                        >
+                          Live
+                        </button>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 {showModal ? (
