@@ -32,12 +32,12 @@ const ProjectList = () => {
               <div
                 key={index}
                 style={{ backgroundImage: `url(${item.image})` }}
-                className='content-div group container mx-auto flex items-center justify-center rounded-md px-2 py-5 text-center shadow-lg shadow-[#dcdcdc] aspect-video group relative'
+                className='content-div group container mx-auto flex items-center justify-center rounded-md px-2  text-center shadow-lg shadow-[#dcdcdc] aspect-video group relative'
               >
                 {/* hover effects for images */}
-                <div className='opacity-0 transition after:rounded-md after:transition-all after:duration-300 group-hover:opacity-100'>
-                  <div className='backdrop-blur-xl p-2 rounded-md transition transition-all duration-300'>
-                    <span className='text-xl font bold text-neutral-700 tracking-wider '>
+                <div className='opacity-0 group-hover:opacity-100'>
+                  <div className='backdrop-blur-xl rounded-md py-5 px-6'>
+                    <span className='text-xl font bold text-red-900 tracking-wider '>
                       {item.name}
                     </span>
 
@@ -50,18 +50,20 @@ const ProjectList = () => {
                         Show More
                       </button>
 
-                      <a
-                        href={item.live}
-                        target='_blank'
-                        rel='noreferrer'
-                      >
-                        <button
-                          className='text-center rounded-sm px-1 py-1 m-2
-                          bg-red-900 text-neutral-100 font-bold text-base'
+                      {item.live && (
+                        <a
+                          href={item.live}
+                          target='_blank'
+                          rel='noreferrer'
                         >
-                          Live
-                        </button>
-                      </a>
+                          <button
+                            className='text-center rounded-sm px-1 py-1 m-2
+                          bg-red-900 text-neutral-100 font-bold text-base'
+                          >
+                            Live
+                          </button>
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>

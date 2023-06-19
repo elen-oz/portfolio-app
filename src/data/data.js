@@ -3,6 +3,8 @@ import WorkImg2 from '../assets/projects/dojo.png';
 import WorkImg3 from '../assets/projects/myMoney.png';
 import WorkImg4 from '../assets/projects/food-order.png';
 import WorkImg5 from '../assets/projects/cookingApp.png';
+import WorkImg6 from '../assets/projects/brain-game.png';
+import WorkImg7 from '../assets/projects/difference-calculator.png';
 
 const data = [
   {
@@ -48,6 +50,23 @@ const data = [
     live: 'https://mymoney-54d85.web.app/',
     description:
       'This app is for keeping track of your expenses (no data needed, just create new user)',
+  },
+  {
+    id: 6,
+    name: 'Brain Games: CLI App',
+    image: WorkImg6,
+    github: 'https://github.com/elen-oz/brain-games',
+    live: null,
+    description:
+      'This project presents 5 mini-games with the user. Each game has a greeting, addressing the user by name. The number of rounds in all games is three.',
+  },
+  {
+    id: 6,
+    name: 'Difference Calculator: CLI App',
+    image: WorkImg7,
+    github: 'https://github.com/elen-oz/difference-calculator',
+    live: null,
+    description: 'Difference Calculator determines the difference between two data structures.',
   },
 ];
 

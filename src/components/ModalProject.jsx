@@ -18,7 +18,7 @@ const ModalProject = ({ showModal, setShowModal, project }) => {
             {/*body*/}
             <div className='relative p-6 flex-auto'>
               <img src={project.image} />
-              <p className='my-4 text-slate-500 text-lg leading-relaxed'>{project.description}</p>
+              <p className='my-4 text-neutral-600 text-lg leading-relaxed'>{project.description}</p>
             </div>
             {/*footer*/}
 
@@ -38,19 +38,21 @@ const ModalProject = ({ showModal, setShowModal, project }) => {
                   </button>
                 </a>
 
-                <a
-                  href={project.live}
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <button
-                    className='bg-red-900 text-white active:bg-neutral-400 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:bg-red-950 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150'
-                    type='button'
-                    onClick={() => setShowModal(false)}
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target='_blank'
+                    rel='noreferrer'
                   >
-                    Live
-                  </button>
-                </a>
+                    <button
+                      className='bg-red-900 text-white active:bg-neutral-400 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:bg-red-950 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150'
+                      type='button'
+                      onClick={() => setShowModal(false)}
+                    >
+                      Live
+                    </button>
+                  </a>
+                )}
               </div>
               <button
                 className='text-gray-700 rounded background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none hover:bg-neutral-200 mr-1 mb-1 ease-linear transition-all duration-150 active:bg-neutral-400'
