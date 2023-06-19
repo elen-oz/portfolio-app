@@ -32,12 +32,12 @@ const ProjectList = () => {
               <div
                 key={index}
                 style={{ backgroundImage: `url(${item.image})` }}
-                className='content-div group container mx-auto flex items-center justify-center rounded-md px-2  text-center shadow-lg shadow-[#dcdcdc] dark:shadow-gray-950 aspect-video group relative'
+                className='content-div group container mx-auto flex items-center justify-center rounded-md px-2  text-center shadow-lg shadow-[#dcdcdc] dark:shadow-gray-950 aspect-video '
               >
                 {/* hover effects for images */}
                 <div className='opacity-0 group-hover:opacity-100'>
-                  <div className='backdrop-blur-xl rounded-md py-5 px-6'>
-                    <span className='text-xl font bold text-red-900 tracking-wider '>
+                  <div className='backdrop-blur-2xl rounded-md py-5 px-6'>
+                    <span className='text-md font-bold text-red-900 tracking-wider '>
                       {item.name}
                     </span>
 

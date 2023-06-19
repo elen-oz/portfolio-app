@@ -146,7 +146,7 @@ function NavBar() {
           className={
             !nav
               ? 'hidden'
-              : 'absolute z-50 top-[80px] right-0 w-1/3 h-screen flex flex-col justify-start items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
+              : 'absolute top-[80px] right-0 w-1/3 h-screen flex flex-col justify-start items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
           }
         >
           <li className='py-6 text-3xl hover:text-red-900'>
