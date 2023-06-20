@@ -5,6 +5,7 @@ import WorkImg4 from '../assets/projects/food-order.png';
 import WorkImg5 from '../assets/projects/cookingApp.png';
 import WorkImg6 from '../assets/projects/brain-game.png';
 import WorkImg7 from '../assets/projects/difference-calculator.png';
+import WorkImg8 from '../assets/projects/today-i-learned.png';
 
 const data = [
   {
@@ -43,6 +44,14 @@ const data = [
     description: 'Site with recipes: the ability to add ypuer own recipe and remove them',
   },
   {
+    id: 8,
+    name: 'Today I Learned',
+    image: WorkImg8,
+    github: 'https://github.com/elen-oz/today-i-learned-app',
+    live: 'https://today-i-learned-app-mauve.vercel.app/',
+    description: 'A web application where you can share interesting facts and vote for others.',
+  },
+  {
     id: 5,
     name: 'My Money',
     image: WorkImg3,
@@ -61,7 +70,7 @@ const data = [
       'This project presents 5 mini-games with the user. Each game has a greeting, addressing the user by name. The number of rounds in all games is three.',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Difference Calculator: CLI App',
     image: WorkImg7,
     github: 'https://github.com/elen-oz/difference-calculator',
