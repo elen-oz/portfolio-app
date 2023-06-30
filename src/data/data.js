@@ -60,7 +60,7 @@ const data = [
     github: 'https://github.com/elen-oz/my-money',
     live: 'https://mymoney-54d85.web.app/',
     description:
-      'This app is for keeping track of your expenses (no data needed, just create new user)',
+      '<b>Project Description</b><p>My Money is a web application designed to help users keep track of their expenses. This project is built with React and uses Firebase for backend services.</p><b>Features</b><ul><li><strong>Interaction with Firebase</strong>: The application uses Firebase for backend services.</li><li><strong>User Registration and Login</strong>: The application supports user registration and login.</li><li><strong>Adding and Deleting Records</strong>: Users can add and delete their own expense records.</li></ul>',
   },
   {
     id: 6,
