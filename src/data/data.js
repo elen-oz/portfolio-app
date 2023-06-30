@@ -42,7 +42,7 @@ const data = [
     github: 'https://github.com/elen-oz/cooking-site',
     live: 'https://cooking-ninja-site-e369e.web.app/',
     description:
-      '<strong>Project Description</strong><p>Grin and Baste It is a cooking site that provides recipes and cooking tips for food enthusiasts. This project is built with React.js, CSS, and HTML.</p><strong>Features</strong><ul><li><strong>Add/Delet Items</strong>: The application allows users to add and delete recipes.</li><li><strong>Theme Switching</strong>: The application includes a feature to switch between different color themes.</li><li><strong>Firestore Integration</strong>: The application uses Firestore for storing and retrieving data.</li></ul>',
+      '<strong>Project Description</strong><p>Grin and Baste It is a cooking site that provides recipes and cooking tips for food enthusiasts. This project is built with React.js, CSS, and HTML.</p><strong>Features</strong><ul><li><strong>Add/Remove Items</strong>: The application allows users to add and delete recipes.</li><li><strong>Theme Switching</strong>: The application includes a feature to switch between different color themes.</li><li><strong>Firestore Integration</strong>: The application uses Firestore for storing and retrieving data.</li></ul>',
   },
   {
     id: 8,
@@ -77,7 +77,8 @@ const data = [
     image: WorkImg7,
     github: 'https://github.com/elen-oz/difference-calculator',
     live: null,
-    description: 'Difference Calculator determines the difference between two data structures.',
+    description:
+      '<b>Project Description</b><p>Difference Calculator is a program designed to determine the difference between two data structures. It supports various file formats including .json and .yaml, and can handle both flat and nested structures.</p><b>Features</b><ul><li><strong>Comparison of Flat Structures</strong>: The program can compare flat .json and .yaml files with a plain structure.</li><li><strong>Comparison of Nested Structures</strong>: The program can compare .json files with a nested structure. It supports different output formats including STYLISH, PLAIN, and JSON.</li></ul>',
   },
 ];
 
