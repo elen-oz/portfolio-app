@@ -69,7 +69,6 @@ const ProjectList = () => {
                 </div>
                 {showModal ? (
                   <ModalProject
-                    showModal={showModal}
                     setShowModal={setShowModal}
                     project={selectedProject}
                   />

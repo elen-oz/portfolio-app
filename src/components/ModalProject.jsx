@@ -1,4 +1,6 @@
-const ModalProject = ({ showModal, setShowModal, project }) => {
+import parse from 'html-react-parser';
+
+const ModalProject = ({ setShowModal, project }) => {
   return (
     <>
       <div className='justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none'>
@@ -18,7 +20,9 @@ const ModalProject = ({ showModal, setShowModal, project }) => {
             {/*body*/}
             <div className='relative p-6 flex-auto'>
               <img src={project.image} />
-              <p className='my-4 text-neutral-600 text-lg leading-relaxed'>{project.description}</p>
+              <p className='my-4 text-neutral-600 text-lg leading-relaxed'>
+                {parse(project.description)}
+              </p>
             </div>
             {/*footer*/}
 

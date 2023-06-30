@@ -15,7 +15,7 @@ const data = [
     github: 'https://github.com/elen-oz/food-order-app',
     live: 'https://food-order-app-9b4ad.web.app/',
     description:
-      'Added the ability to add items to the cart, counting the quantity of goods and the amount. App linked to fairbase storage.',
+      'Added the ability to add items to the cart, counting the quantity of goods and the amount. <br /> App linked to fairbase storage.',
   },
   {
     id: 2,
