@@ -69,7 +69,7 @@ const data = [
     github: 'https://github.com/elen-oz/brain-games',
     live: null,
     description:
-      'This project presents 5 mini-games with the user. Each game has a greeting, addressing the user by name. The number of rounds in all games is three.',
+      '<b>Project description</b><p>Brain Games is a collection of five mini-games designed to challenge the users mental agility. Each game begins with a greeting, personalized with the users name, and consists of three rounds.</p><b>Games</b><ul><li><strong>Brain Even</strong>: The game asks the user to determine if a number is even.</li><li><strong>Brain Calc</strong>: The game presents an arithmetic operation (addition, subtraction, multiplication) on two numbers and asks the user to calculate the result.</li><li><strong>Brain GCD</strong>: The game asks the user to find the greatest common divisor of two numbers.</li><li><strong>Brain Progression</strong>: The game presents an arithmetic progression with one number missing and asks the user to identify the missing number.</li><li><strong>Brain Prime</strong>: The game asks the user to determine if a number is prime.</li></ul>',
   },
   {
     id: 7,
