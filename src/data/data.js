@@ -24,7 +24,7 @@ const data = [
     github: 'https://github.com/elen-oz/rss-aggregator',
     live: 'https://frontend-project-11-01.vercel.app/',
     description:
-      '<b>Description</b><p>This is an RSS aggregator, a specialized tool designed to collate news feeds, article announcements, and other content. It provides an easy way for websites, typically blogs, to allow users to subscribe to updates. The aggregator polls sites&#39; RSS feeds for new posts and displays them in a user-friendly manner, marking what has been read, and so on.</p><p>This project is the third project on the Hexlet platform for the front-end development programme.</p><b>Features</b><ul><li>Subscribe to RSS feeds from various websites</li><li>View a list of all posts from subscribed feeds</li><li>Mark posts as read</li><li>View a summary of each post within the aggregator</li></ul>',
+      '<b>Description</b><p>RSS Aggregator is a specialized tool designed to collate news feeds, article announcements, and other content from various websites. It provides an easy way for users to subscribe to updates and view them in a user-friendly manner. This project is built with pure JavaScript and uses the Bootstrap library for styling.</p><b>Features</b><ul><li><strong>Subscribe to RSS Feeds</strong>: Users can subscribe to RSS feeds from various websites.</li><li><strong>View Posts</strong>: Users can view a list of all posts from their subscribed feeds.</li><li><strong>Mark Posts as Read</strong>: Users can mark posts as read, helping them keep track of the content they have already viewed.</li><li><strong>Post Summary</strong>: Users can view a summary of each post within the aggregator in a modal window.</li><li><strong>Auto-Update</strong>: The feed updates automatically every 5 seconds, ensuring users always have the latest content.</li></ul>',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const data = [
     github: 'https://github.com/elen-oz/the-dojo',
     live: 'https://thedojosite-355e3.web.app/',
     description:
-      '<b>Description</b><p>The Dojo is a collaborative project management tool. Register, invite colleagues, and work together on projects. This application is built with React.js, CSS, and HTML.</p><b>Features</b><ul><li>User registration and login</li><li>Project creation and management</li><li>Collaboration with colleagues</li><li>Real-time updates on project progress</li></ul>',
+      '<b>Description</b><p>The Dojo is a collaborative project management tool that allows users to register, invite colleagues, and work together on projects. This application is built with React.js, CSS, and HTML, and uses Firebase for backend services.</p><b>Features</b><ul><li><strong>User Registration and Login</strong>: The application supports user registration and login using Firebase, ensuring a personalized experience for each user.</li><li><strong>Avatar Image Upload</strong>: Users can upload their own image to be used as an avatar, adding a personal touch to their profile.</li><li><strong>Project Creation and Management</strong>: Users can create new projects and manage them. They can also delete projects when they are completed.</li><li><strong>Commenting</strong>: Users can comment on projects, facilitating discussion and collaboration.</li><li><strong>Project Sorting</strong>: Projects can be sorted by categories, making it easy to manage and navigate through different types of projects.</li></ul>',
   },
   {
     id: 4,
