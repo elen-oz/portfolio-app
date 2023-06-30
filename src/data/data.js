@@ -50,7 +50,8 @@ const data = [
     image: WorkImg8,
     github: 'https://github.com/elen-oz/today-i-learned-app',
     live: 'https://today-i-learned-app-mauve.vercel.app/',
-    description: 'A web application where you can share interesting facts and vote for others.',
+    description:
+      '<b>Project Description</b><p>Today I Learned is a web application where users can share interesting facts and vote for others. This project is built with React and uses Supabase for backend services.</p><b>Features</b><ul><li><strong>Interaction with Supabase</strong>: The application uses Supabase for backend services, providing a seamless experience for data management.</li><li><strong>Adding New Facts</strong>: Users can share interesting facts they have learned.</li><li><strong>Liking Facts</strong>: Users can vote for facts they find interesting.</li><li><strong>Sorting Facts</strong>: Facts can be sorted based on the number of likes they have received, making it easy to find the most popular facts.</li><li><strong>Category Filter</strong>: Users can filter facts based on categories, allowing them to focus on topics they are interested in.</li></ul>',
   },
   {
     id: 5,
