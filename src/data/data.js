@@ -15,7 +15,7 @@ const data = [
     github: 'https://github.com/elen-oz/food-order-app',
     live: 'https://food-order-app-9b4ad.web.app/',
     description:
-      '<b>Description</b><p>This is a food ordering application built with JavaScript, CSS, and HTML. The application allows users to browse through a menu, select their desired items, and place an order.</p><b>Features</b><ul><li>Browse through a list of available food items</li><li>Add desired items to a shopping cart</li><li>Place an order for the selected items</li></ul>',
+      '<b>Description</b><p>This is a food ordering application built with React.js, CSS, and HTML. The application allows users to browse through a menu, select their desired items, and place an order.</p><b>Features</b><ul><li>Browse through a list of available food items</li><li>Add desired items to a shopping cart</li><li>Place an order for the selected items</li></ul>',
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const data = [
     github: 'https://github.com/elen-oz/the-dojo',
     live: 'https://thedojosite-355e3.web.app/',
     description:
-      'Implemented signup/login, upload your own avatar. The ability to create and to delete (complete) the project; On the general page (dashboard), you can filter projects by category. In addition to the name and details, the ability to specify the date (project deadline), category, responsible users from among the created users. Commenting each project',
+      '<b>Description</b><p>The Dojo is a collaborative project management tool. Register, invite colleagues, and work together on projects. This application is built with React.js, CSS, and HTML.</p><b>Features</b><ul><li>User registration and login</li><li>Project creation and management</li><li>Collaboration with colleagues</li><li>Real-time updates on project progress</li></ul>',
   },
   {
     id: 4,
