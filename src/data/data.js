@@ -41,7 +41,8 @@ const data = [
     image: WorkImg5,
     github: 'https://github.com/elen-oz/cooking-site',
     live: 'https://cooking-ninja-site-e369e.web.app/',
-    description: 'Site with recipes: the ability to add ypuer own recipe and remove them',
+    description:
+      '<strong>Project Description</strong><p>Grin and Baste It is a cooking site that provides recipes and cooking tips for food enthusiasts. This project is built with React.js, CSS, and HTML.</p><strong>Features</strong><ul><li><strong>Add/Delet Items</strong>: The application allows users to add and delete recipes.</li><li><strong>Theme Switching</strong>: The application includes a feature to switch between different color themes.</li><li><strong>Firestore Integration</strong>: The application uses Firestore for storing and retrieving data.</li></ul>',
   },
   {
     id: 8,
