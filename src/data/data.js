@@ -15,7 +15,7 @@ const data = [
     github: 'https://github.com/elen-oz/food-order-app',
     live: 'https://food-order-app-9b4ad.web.app/',
     description:
-      'Added the ability to add items to the cart, counting the quantity of goods and the amount. <br /> App linked to fairbase storage.',
+      '<b>Description</b><p>This is a food ordering application built with JavaScript, CSS, and HTML. The application allows users to browse through a menu, select their desired items, and place an order.</p><b>Features</b><ul><li>Browse through a list of available food items</li><li>Add desired items to a shopping cart</li><li>Place an order for the selected items</li></ul>',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const data = [
     github: 'https://github.com/elen-oz/rss-aggregator',
     live: 'https://frontend-project-11-01.vercel.app/',
     description:
-      'Rss Reader is a service for aggregating RSS feeds, which makes it easy to read a variety of sources. The feed is automatically updated every 5 seconds.',
+      '<b>Description</b><p>This is an RSS aggregator, a specialized tool designed to collate news feeds, article announcements, and other content. It provides an easy way for websites, typically blogs, to allow users to subscribe to updates. The aggregator polls sites&#39; RSS feeds for new posts and displays them in a user-friendly manner, marking what has been read, and so on.</p><p>This project is the third project on the Hexlet platform for the front-end development programme.</p><b>Features</b><ul><li>Subscribe to RSS feeds from various websites</li><li>View a list of all posts from subscribed feeds</li><li>Mark posts as read</li><li>View a summary of each post within the aggregator</li></ul>',
   },
   {
     id: 3,

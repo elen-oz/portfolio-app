@@ -20,7 +20,7 @@ const ModalProject = ({ setShowModal, project }) => {
             {/*body*/}
             <div className='relative p-6 flex-auto'>
               <img src={project.image} />
-              <p className='my-4 text-neutral-600 text-lg leading-relaxed'>
+              <p className='my-4 text-neutral-600 text-lg leading-relaxed text-left'>
                 {parse(project.description)}
               </p>
             </div>
