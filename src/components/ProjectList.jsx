@@ -20,9 +20,9 @@ const ProjectList = () => {
         className='w-full md:h-screen dark:bg-gray-800 dark:text-neutral-300'
       >
         <div className='container max-w-[900px] mx-auto flex flex-col justify-center w-full h-full'>
-          <div className='pb-8'>
+          <div className='pb-2'>
             <p className='text-4xl font-bold inline border-b-4 border-red-900'>Work</p>
-            <p className='py-6'>&#47;&#47; Check out some of my recent work</p>
+            <p className='py-4'>&#47;&#47; Check out some of my recent work</p>
           </div>
 
           {/* container for projects */}
