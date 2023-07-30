@@ -1,3 +1,3 @@
 # portfolio-app
 
-https://elenoz.app/
+https://elen-oz.site/
