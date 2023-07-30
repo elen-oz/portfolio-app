@@ -2,12 +2,6 @@ import { useTheme } from '../hooks/useTheme';
 import { Link } from 'react-scroll';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 
-// const { darkMode } = useTheme();
-
-// dark:bg-gray-800 dark:text-neutral-300
-
-// <div className={darkMode ? 'dark' : ''}></div>
-
 const Home = () => {
   const { darkMode } = useTheme();
 
