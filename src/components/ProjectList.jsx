@@ -67,15 +67,16 @@ const ProjectList = () => {
                     </div>
                   </div>
                 </div>
-                {showModal ? (
-                  <ModalProject
-                    setShowModal={setShowModal}
-                    project={selectedProject}
-                  />
-                ) : null}
               </div>
             ))}
           </div>
+
+          {showModal ? (
+            <ModalProject
+              setShowModal={setShowModal}
+              project={selectedProject}
+            />
+          ) : null}
         </div>
       </div>
     </div>
