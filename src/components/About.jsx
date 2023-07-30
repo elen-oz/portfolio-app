@@ -1,11 +1,5 @@
 import { useTheme } from '../hooks/useTheme';
 
-// const { darkMode } = useTheme();
-
-// <div className={darkMode ? 'dark' : ''}></div>
-
-// dark:bg-gray-800 dark:text-neutral-300
-
 const About = () => {
   const { darkMode } = useTheme();
 
