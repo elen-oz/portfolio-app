@@ -13,10 +13,10 @@ const Home = () => {
       >
         {/* container */}
         <div className='container max-w-[900px] mx-auto flex flex-col justify-center h-full'>
-          <p className='text-red-900'>Hi, my name is</p>
+          <p className='text-red-900'>Hi! I am</p>
           <h1 className='text-4xl sm:text-7xl font-bold'>Elena</h1>
           <h2 className='text-neutral-500 text-4xl sm:text-7xl font-bold '>
-            I&apos;m a Frontend Developer
+            and I love programming
           </h2>
           <p className='py-4 max-w-[700px]'>
             An enthusiastic Frontend Developer based in Stockholm, Sweden.
