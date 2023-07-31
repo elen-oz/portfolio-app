@@ -27,6 +27,11 @@
   --light-gray: #fafafa;
 }
 
+.dark-theme {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
