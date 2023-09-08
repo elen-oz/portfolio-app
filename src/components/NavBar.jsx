@@ -5,7 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { CgDarkMode } from 'react-icons/cg';
 import { Link } from 'react-scroll';
-import Resume from '../assets/Elena-O_CV.pdf';
+import Resume from '../assets/Elena_CV.pdf';
 import Logo from '../assets/logo_dark2.png';
 
 // const { darkMode } = useTheme();
@@ -239,7 +239,7 @@ function NavBar() {
               <a
                 className='flex justify-between items-center w-full'
                 href={Resume}
-                download='Elena-O_CV.pdf'
+                download='Elena_CV.pdf'
               >
                 Resume
                 <BsFillPersonLinesFill size={30} />
