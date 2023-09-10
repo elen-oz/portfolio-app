@@ -234,6 +234,8 @@ function NavBar() {
               <a
                 className='flex justify-between items-center w-full'
                 href='Elena_CV.pdf'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 Resume
                 <BsFillPersonLinesFill size={30} />
