@@ -25,7 +25,7 @@ function NavBar() {
         {/* -------------Social Links Header------------- */}
         <ul className='md:hidden flex flex-row'>
           <li className='flex justify-center items-center px-0'>
-            <div className='flex justify-center items-center w-full text-red-700 dark:text-neutral-300  hover:scale-110 duration-500'>
+            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'>
               <a
                 className='flex items-center p-[20px]'
                 href='https://www.linkedin.com/in/elen-oz/'
@@ -38,7 +38,7 @@ function NavBar() {
           </li>
 
           <li className=' flex items-center px-0'>
-            <div className='flex justify-center items-center w-full text-red-700 dark:text-neutral-300  hover:scale-110 duration-500'>
+            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300  hover:text-red-700 hover:scale-110 duration-500'>
               <a
                 className='flex items-center p-[20px]'
                 href='https://github.com/elen-oz'
@@ -51,7 +51,7 @@ function NavBar() {
           </li>
 
           <li className=' flex justify-between items-center px-0'>
-            <div className='flex justify-center items-center w-full text-red-700 dark:text-neutral-300 hover:scale-110 duration-500'>
+            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'>
               <a
                 className='flex items-center p-[20px]'
                 href='mailto: ozerova.lenka@gmail.com?subject=Site Portfolio Mail'
@@ -62,7 +62,7 @@ function NavBar() {
           </li>
 
           <li className=' flex justify-between items-center px-0'>
-            <div className='flex justify-center items-center w-full text-red-700 dark:text-neutral-300 hover:scale-110 duration-500'>
+            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'>
               <a
                 className='flex items-center p-[20px]'
                 href='Elena_CV.pdf'
@@ -211,7 +211,7 @@ function NavBar() {
         {/* Social Icons on the left */}
         <div className='hidden md:flex fixed flex-col top-[35%] md:top-[14%] left-0'>
           <ul>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-700 hover:text-neutral-800  dark:bg-gray-800 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-neutral-800 hover:text-red-700  dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='https://www.linkedin.com/in/elen-oz/'
@@ -222,7 +222,7 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-700 hover:text-neutral-800  dark:bg-gray-800 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-neutral-800 hover:text-red-700  dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='https://github.com/elen-oz'
@@ -233,7 +233,7 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-700 hover:text-neutral-800 dark:bg-gray-800 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-neutral-800 hover:text-red-700 dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
@@ -242,7 +242,7 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-700 hover:text-neutral-800 dark:bg-gray-800 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 ttext-neutral-800 hover:text-red-700 dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='Elena_CV.pdf'
