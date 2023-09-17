@@ -13,7 +13,7 @@ const Contact = () => {
       <div className='max-w-full dark:bg-gray-800 dark:text-neutral-300'>
         <div
           name='contact'
-          className='container max-w-[900px] h-screen flex flex-col justify-center items-center mx-auto'
+          className='container max-w-[900px] h-[calc(100vh-5rem)] flex flex-col justify-end items-center mx-auto'
         >
           <form
             method='POST'
