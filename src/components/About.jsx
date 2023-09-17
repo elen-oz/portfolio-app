@@ -26,9 +26,9 @@ const About = () => {
             <div>
               <p>
                 Frontend developer with over a year of self-study in frontend development. Currently
-                enhancing my skills at <strong>Hyper Island</strong>&apos;s program. Proficient in
-                <em>React</em> and <em>JavaScript</em>, I&apos;m dedicated to delivering top-quality
-                solutions.
+                enhancing my skills at&nbsp;<strong>Hyper Island</strong>&apos;s&nbsp;program.
+                Proficient in&nbsp;<em>React</em> and <em>JavaScript</em>, I&apos;m dedicated to
+                delivering top-quality solutions.
                 <br />
                 <br />
                 Eager for new opportunities and collaborations, let&apos;s create exceptional
