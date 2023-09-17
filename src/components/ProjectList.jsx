@@ -21,7 +21,7 @@ const ProjectList = () => {
       >
         <div className='container max-w-[900px] mx-auto flex flex-col justify-center w-full h-full'>
           <div className='pb-2'>
-            <p className='text-4xl font-bold inline border-b-4 border-red-900'>Work</p>
+            <p className='text-4xl font-bold inline border-b-4 border-red-700'>Work</p>
             <p className='py-4'>&#47;&#47; Check out some of my recent work</p>
           </div>
 
@@ -37,7 +37,7 @@ const ProjectList = () => {
                 {/* hover effects for images */}
                 <div className='opacity-0 group-hover:opacity-100'>
                   <div className='backdrop-blur-2xl rounded-md py-5 px-6'>
-                    <span className='text-md font-bold text-red-900 tracking-wider '>
+                    <span className='text-md font-bold text-red-700 tracking-wider '>
                       {item.name}
                     </span>
 
@@ -58,7 +58,7 @@ const ProjectList = () => {
                         >
                           <button
                             className='text-center rounded-sm px-1 py-1 m-2
-                          bg-red-900 text-neutral-100 font-bold text-base'
+                          bg-red-700 text-neutral-100 font-bold text-base'
                           >
                             Live
                           </button>

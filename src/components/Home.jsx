@@ -13,7 +13,7 @@ const Home = () => {
       >
         {/* container */}
         <div className='container max-w-[900px] mx-auto flex flex-col justify-center h-full'>
-          <p className='text-red-900 text-xl'>Hi! I am</p>
+          <p className='text-red-700 text-xl'>Hi! I am</p>
           <h1 className='text-4xl sm:text-7xl font-bold'>Elena</h1>
           <h2 className='text-neutral-500 text-4xl sm:text-7xl font-bold '>
             and I love programming
@@ -27,7 +27,7 @@ const Home = () => {
               smooth={true}
               duration={500}
             >
-              <button className='group border-2 px-6 py-3 my-2 flex items-center border-red-900 hover:text-stone-50 hover:bg-red-900 hover:border-red-900'>
+              <button className='group border-2 px-6 py-3 my-2 flex items-center border-red-700 hover:text-stone-50 hover:bg-red-700 hover:border-red-700'>
                 View Work
                 <HiArrowNarrowRight className='ml-3' />
               </button>

@@ -13,7 +13,7 @@ const About = () => {
         <div className='container max-w-[900px] mx-auto flex flex-col justify-center items-center w-full h-full'>
           <div className='w-full grid grid-cols-2 gap-8'>
             <div className='sm:text-right pb-8 '>
-              <p className='text-4xl font-bold inline border-b-4 border-red-900'>About</p>
+              <p className='text-4xl font-bold inline border-b-4 border-red-700'>About</p>
             </div>
             <div></div>
           </div>

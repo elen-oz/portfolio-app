@@ -5,8 +5,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { CgDarkMode } from 'react-icons/cg';
 import { Link } from 'react-scroll';
-import Resume from '../assets/Elena_CV.pdf';
-import Logo from '../assets/logo_dark2.png';
+import Logo from '../assets/logo-elena.png';
 
 function NavBar() {
   const [nav, setNav] = useState(false);
@@ -26,7 +25,7 @@ function NavBar() {
         {/* -------------Social Links Header------------- */}
         <ul className='md:hidden flex flex-row'>
           <li className='flex justify-center items-center px-0'>
-            <div className='flex justify-center items-center w-full text-red-900 dark:text-neutral-300  hover:scale-110 duration-500'>
+            <div className='flex justify-center items-center w-full text-red-700 dark:text-neutral-300  hover:scale-110 duration-500'>
               <a
                 className='flex items-center p-[20px]'
                 href='https://www.linkedin.com/in/elen-oz/'
@@ -39,7 +38,7 @@ function NavBar() {
           </li>
 
           <li className=' flex items-center px-0'>
-            <div className='flex justify-center items-center w-full text-red-900 dark:text-neutral-300  hover:scale-110 duration-500'>
+            <div className='flex justify-center items-center w-full text-red-700 dark:text-neutral-300  hover:scale-110 duration-500'>
               <a
                 className='flex items-center p-[20px]'
                 href='https://github.com/elen-oz'
@@ -52,7 +51,7 @@ function NavBar() {
           </li>
 
           <li className=' flex justify-between items-center px-0'>
-            <div className='flex justify-center items-center w-full text-red-900 dark:text-neutral-300 hover:scale-110 duration-500'>
+            <div className='flex justify-center items-center w-full text-red-700 dark:text-neutral-300 hover:scale-110 duration-500'>
               <a
                 className='flex items-center p-[20px]'
                 href='mailto: ozerova.lenka@gmail.com?subject=Site Portfolio Mail'
@@ -63,7 +62,7 @@ function NavBar() {
           </li>
 
           <li className=' flex justify-between items-center px-0'>
-            <div className='flex justify-center items-center w-full text-red-900 dark:text-neutral-300 hover:scale-110 duration-500'>
+            <div className='flex justify-center items-center w-full text-red-700 dark:text-neutral-300 hover:scale-110 duration-500'>
               <a
                 className='flex items-center p-[20px]'
                 href='Elena_CV.pdf'
@@ -80,7 +79,7 @@ function NavBar() {
         <ul className='hidden md:flex'>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-900'
+              className='hover:border-b-2 hover:border-red-700'
               to='about'
               smooth={true}
               duration={500}
@@ -90,7 +89,7 @@ function NavBar() {
           </li>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-900'
+              className='hover:border-b-2 hover:border-red-700'
               to='skills'
               smooth={true}
               duration={500}
@@ -100,7 +99,7 @@ function NavBar() {
           </li>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-900'
+              className='hover:border-b-2 hover:border-red-700'
               to='work'
               smooth={true}
               duration={500}
@@ -110,7 +109,7 @@ function NavBar() {
           </li>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-900'
+              className='hover:border-b-2 hover:border-red-700'
               to='contact'
               smooth={true}
               duration={500}
@@ -143,7 +142,7 @@ function NavBar() {
           {/* Hamburger */}
           <div
             onClick={handleClick}
-            className='md:hidden z-10 hover:text-red-900 p-[10px]'
+            className='md:hidden z-10 hover:text-red-700 p-[10px]'
           >
             {!nav ? <FaBars /> : <FaTimes />}
           </div>
@@ -157,7 +156,7 @@ function NavBar() {
               : 'absolute top-[80px] right-0 w-1/3 h-screen flex flex-col justify-start items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
           }
         >
-          <li className='py-6 text-3xl hover:text-red-900'>
+          <li className='py-6 text-3xl hover:text-red-700'>
             <Link
               onClick={handleClick}
               to='home'
@@ -167,7 +166,7 @@ function NavBar() {
               Home
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-900'>
+          <li className='py-6 text-3xl hover:text-red-700'>
             <Link
               onClick={handleClick}
               to='about'
@@ -177,7 +176,7 @@ function NavBar() {
               About
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-900'>
+          <li className='py-6 text-3xl hover:text-red-700'>
             <Link
               onClick={handleClick}
               to='skills'
@@ -187,7 +186,7 @@ function NavBar() {
               Skills
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-900'>
+          <li className='py-6 text-3xl hover:text-red-700'>
             <Link
               onClick={handleClick}
               to='work'
@@ -197,7 +196,7 @@ function NavBar() {
               Work
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-900'>
+          <li className='py-6 text-3xl hover:text-red-700'>
             <Link
               onClick={handleClick}
               to='contact'
@@ -212,7 +211,7 @@ function NavBar() {
         {/* Social Icons on the left */}
         <div className='hidden md:flex fixed flex-col top-[35%] md:top-[14%] left-0'>
           <ul>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-900 hover:text-neutral-800  dark:bg-gray-800 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-700 hover:text-neutral-800  dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='https://www.linkedin.com/in/elen-oz/'
@@ -223,7 +222,7 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-900 hover:text-neutral-800  dark:bg-gray-800 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-700 hover:text-neutral-800  dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='https://github.com/elen-oz'
@@ -234,7 +233,7 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-900 hover:text-neutral-800 dark:bg-gray-800 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-700 hover:text-neutral-800 dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
@@ -243,7 +242,7 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-900 hover:text-neutral-800 dark:bg-gray-800 dark:text-neutral-300'>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-red-700 hover:text-neutral-800 dark:bg-gray-800 dark:text-neutral-300'>
               <a
                 className='flex justify-between items-center w-full'
                 href='Elena_CV.pdf'
