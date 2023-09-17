@@ -19,15 +19,20 @@ const About = () => {
           </div>
           <div className='w-full grid sm:grid-cols-2 gap-8'>
             <div className='sm:text-right text-3xl font-bold'>
-              <p className='text-neutral-500'>Hi, I&apos;m Elena Ozerova, nice to meet you.</p>
+              <p className='text-neutral-500'>
+                Hi, I&apos;m <strong>Elena Ozerova</strong>, nice to meet you.
+              </p>
             </div>
             <div>
               <p>
                 Frontend developer with over a year of self-study in frontend development. Currently
-                enhancing my skills at Hyper Island&apos;s program. Proficient in React and
-                JavaScript, I&apos;m dedicated to delivering top-quality solutions. Eager for new
-                opportunities and collaborations, let&apos;s create exceptional digital applications
-                together!
+                enhancing my skills at <strong>Hyper Island</strong>&apos;s program. Proficient in
+                <em>React</em> and <em>JavaScript</em>, I&apos;m dedicated to delivering top-quality
+                solutions.
+                <br />
+                <br />
+                Eager for new opportunities and collaborations, let&apos;s create exceptional
+                digital applications together!
               </p>
             </div>
           </div>

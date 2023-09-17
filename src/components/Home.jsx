@@ -27,7 +27,7 @@ const Home = () => {
             and I love <br /> programming
           </h2>
           <p className='py-4 max-w-[700px]'>
-            An enthusiastic Frontend Developer based in Stockholm, Sweden.
+            An enthusiastic <strong>Frontend Developer</strong> based in Stockholm, Sweden.
           </p>
           <div>
             <Link
