@@ -134,7 +134,7 @@ function NavBar() {
               <img
                 src={Logo}
                 alt='Logo Image'
-                style={{ width: '100px' }}
+                style={{ width: '90px' }}
               />
             </Link>
           </div>
