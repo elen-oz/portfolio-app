@@ -3,8 +3,8 @@ import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <div className='w-full h-[3rem] bg-stone-200 text-neutral-600 flex justify-center items-center'>
-      <ul className='flex'>
+    <div className={styles.footer}>
+      <ul className={styles.list}>
         <li>Elena Ozerova &copy;</li>
         <li>{new Date().getFullYear()}</li>
       </ul>
