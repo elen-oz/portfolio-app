@@ -3,6 +3,9 @@ import data from '../data/data';
 import { useTheme } from '../hooks/useTheme';
 import ModalProject from './ModalProject';
 
+import mainStyles from '../styles/Main.module.css';
+import styles from './ProjectList.module.css';
+
 const ProjectList = () => {
   const { darkMode } = useTheme();
   const [showModal, setShowModal] = useState(false);
@@ -21,7 +24,9 @@ const ProjectList = () => {
       >
         <div className='container max-w-[900px] mx-auto flex flex-col justify-center w-full h-full'>
           <div className='pb-2'>
-            <p className='text-4xl font-bold inline border-b-4 border-red-700'>Work</p>
+            <p className='text-4xl font-bold inline border-b-4 border-red-700'>
+              Work
+            </p>
             <p className='py-4'>&#47;&#47; Check out some of my recent work</p>
           </div>
 
@@ -51,11 +56,7 @@ const ProjectList = () => {
                       </button>
 
                       {item.live && (
-                        <a
-                          href={item.live}
-                          target='_blank'
-                          rel='noreferrer'
-                        >
+                        <a href={item.live} target='_blank' rel='noreferrer'>
                           <button
                             className='text-center rounded-sm px-1 py-1 m-2
                           bg-red-700 text-neutral-100 font-bold text-base'

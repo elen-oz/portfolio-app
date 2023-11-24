@@ -7,6 +7,9 @@ import { CgDarkMode } from 'react-icons/cg';
 import { Link } from 'react-scroll';
 import Logo from '../assets/logo-elena.png';
 
+import mainStyles from '../styles/Main.module.css';
+import styles from './Navbar.module.css';
+
 function NavBar() {
   const [nav, setNav] = useState(false);
 
@@ -126,16 +129,8 @@ function NavBar() {
 
           {/* Logo */}
           <div className='hover:cursor-pointer p-[10px] ml-[20px]'>
-            <Link
-              to='home'
-              smooth={true}
-              duration={500}
-            >
-              <img
-                src={Logo}
-                alt='Logo Image'
-                style={{ width: '90px' }}
-              />
+            <Link to='home' smooth={true} duration={500}>
+              <img src={Logo} alt='Logo Image' style={{ width: '90px' }} />
             </Link>
           </div>
 
@@ -157,22 +152,12 @@ function NavBar() {
           }
         >
           <li className='py-6 text-3xl hover:text-red-700'>
-            <Link
-              onClick={handleClick}
-              to='home'
-              smooth={true}
-              duration={500}
-            >
+            <Link onClick={handleClick} to='home' smooth={true} duration={500}>
               Home
             </Link>
           </li>
           <li className='py-6 text-3xl hover:text-red-700'>
-            <Link
-              onClick={handleClick}
-              to='about'
-              smooth={true}
-              duration={500}
-            >
+            <Link onClick={handleClick} to='about' smooth={true} duration={500}>
               About
             </Link>
           </li>
@@ -187,12 +172,7 @@ function NavBar() {
             </Link>
           </li>
           <li className='py-6 text-3xl hover:text-red-700'>
-            <Link
-              onClick={handleClick}
-              to='work'
-              smooth={true}
-              duration={500}
-            >
+            <Link onClick={handleClick} to='work' smooth={true} duration={500}>
               Work
             </Link>
           </li>

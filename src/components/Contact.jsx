@@ -1,9 +1,6 @@
 import { useTheme } from '../hooks/useTheme';
-// const { darkMode } = useTheme();
-
-// <div className={darkMode ? 'dark' : ''}></div>
-
-// dark:bg-gray-800 dark:text-neutral-300
+import mainStyles from '../styles/Main.module.css';
+import styles from './Contact.module.css';
 
 const Contact = () => {
   const { darkMode } = useTheme();
@@ -21,8 +18,12 @@ const Contact = () => {
             className='flex flex-col max-w-[600px] w-full my-0'
           >
             <div>
-              <p className='text-4xl font-bold inline border-b-4 border-red-700'>Contact</p>
-              <p className='py-4'>&#47;&#47; Submit the form below to contact me</p>
+              <p className='text-4xl font-bold inline border-b-4 border-red-700'>
+                Contact
+              </p>
+              <p className='py-4'>
+                &#47;&#47; Submit the form below to contact me
+              </p>
             </div>
             <input
               className='my-2 p-2 dark:bg-slate-700 dark:text-neutral-300'
