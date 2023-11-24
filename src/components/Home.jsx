@@ -33,10 +33,12 @@ const Home = () => {
           </p>
           <div>
             <Link to='work' smooth={true} duration={500}>
-              <button className={styles.button}>
-                View Work
-                <HiArrowNarrowRight className='ml-3' />
-              </button>
+              <div className={styles.btnContainer}>
+                <button className={mainStyles.button}>
+                  View Work
+                  <HiArrowNarrowRight className='ml-3' />
+                </button>
+              </div>
             </Link>
           </div>
         </div>

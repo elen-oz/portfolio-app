@@ -67,9 +67,14 @@ a {
   border: 2px solid pink;
 }
 
-/* more */
+.last {
+  height: calc(100vh - 8rem);
+  border: 2px solid red;
+}
+
 .title {
-  font-size: 2rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
   font-weight: 700;
   border-bottom: 4px solid var(--accent);
   display: inline-block;
@@ -78,4 +83,16 @@ a {
 /* 'py-4' */
 .subtitle {
   padding: 1rem 0;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  border: var(--border) var(--accent);
+  transition: 0.2s;
+}
+.button:hover {
+  color: var(--main-light);
+  background-color: var(--accent);
 }

@@ -5,7 +5,6 @@
   font-size: 1.25rem;
 }
 
-/* text-neutral-500 text-4xl sm:text-7xl font-bold */
 .subtitle {
   color: var(--main);
   font-size: 4.5rem;
@@ -13,24 +12,13 @@
   line-height: 1;
 }
 
-/* 'py-4 =1rem, max-w-[700px]' */
 .description {
   padding: 1rem 0;
   max-width: 700px;
 }
 
-/* px/py 1 = 0.25rem */
-
 /* 'group? border-2 px-6 py-3 my-2 flex items-center border-red-700 hover:text-stone-50 hover:bg-red-700 hover:border-red-700' */
-.button {
-  padding: 0.75rem 1.5rem;
+
+.btnContainer {
   margin: 0.5rem 0;
-  display: flex;
-  align-items: center;
-  border: var(--border) var(--accent);
-  transition: 0.2s;
-}
-.button:hover {
-  color: var(--main-light);
-  background-color: var(--accent);
 }

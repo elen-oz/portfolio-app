@@ -7,21 +7,16 @@ const Contact = () => {
 
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
-      <div className='max-w-full dark:bg-gray-800 dark:text-neutral-300'>
-        <div
-          name='contact'
-          className='container max-w-[900px] h-[calc(100vh-5rem)] flex flex-col justify-end items-center mx-auto'
-        >
+      <div className={`${mainStyles.section} ${styles.last}`}>
+        <div name='contact' className={mainStyles.container}>
           <form
             method='POST'
             action='https://getform.io/f/21360c24-1f34-4019-8448-c3a4edffd8e2'
-            className='flex flex-col max-w-[600px] w-full my-0'
+            className={styles.form}
           >
             <div>
-              <p className='text-4xl font-bold inline border-b-4 border-red-700'>
-                Contact
-              </p>
-              <p className='py-4'>
+              <p className={mainStyles.title}>Contact</p>
+              <p className={mainStyles.subtitle}>
                 &#47;&#47; Submit the form below to contact me
               </p>
             </div>
@@ -43,9 +38,11 @@ const Contact = () => {
               rows='7'
               placeholder='Message'
             ></textarea>
-            <button className='text-red-700 border-2 border-red-700 hover:bg-red-700 hover:text-white hover:border-red-700 px-4 py-3 my-8 mx-auto flex items-center'>
-              Let&apos;s Collaborate
-            </button>
+            <div className={styles.btnContainer}>
+              <button className={mainStyles.button}>
+                Let&apos;s Collaborate
+              </button>
+            </div>
           </form>
         </div>
       </div>
