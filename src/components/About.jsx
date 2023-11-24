@@ -7,23 +7,18 @@ const About = () => {
 
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
-      <div
-        name='about'
-        className='w-full h-screen dark:bg-gray-800 dark:text-neutral-300'
-      >
+      <div name='about' className={mainStyles.section}>
         {/* container-- */}
-        <div className='container max-w-[900px] mx-auto flex flex-col justify-center items-center w-full h-full'>
-          <div className='w-full grid grid-cols-2 gap-8'>
-            <div className='sm:text-right pb-8 '>
-              <p className='text-4xl font-bold inline border-b-4 border-red-700'>
-                About
-              </p>
+        <div className={mainStyles.container}>
+          <div className={styles.grid}>
+            <div className={styles.title}>
+              <p className={styles.heading}>About</p>
             </div>
             <div></div>
           </div>
-          <div className='w-full grid sm:grid-cols-2 gap-8'>
-            <div className='sm:text-right text-3xl font-bold'>
-              <p className='text-neutral-500'>
+          <div className={styles.content}>
+            <div className={styles.intro}>
+              <p className={styles.text}>
                 Hi, I&apos;m <strong>Elena Ozerova</strong>, nice to meet you.
               </p>
             </div>
