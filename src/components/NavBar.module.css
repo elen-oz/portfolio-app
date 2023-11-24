@@ -1,0 +1,22 @@
+@import '../styles/Main.module.css';
+
+/* 'fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700 bg-stone-50 dark:bg-gray-800 dark:text-neutral-300' */
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 0 1rem;
+
+  border: 2px dotted salmon;
+}
+
+@media (min-width: 768px) {
+  .header {
+    justify-content: end;
+  }
+}
