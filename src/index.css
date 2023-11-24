@@ -6,7 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   body {
     @apply font-[Lexend];
     @apply bg-stone-50;
@@ -16,24 +16,17 @@
     @apply px-4;
     @apply cursor-pointer;
   }
-}
+} */
 
-:root {
-  /* gray-800 */
+/* :root {
   --dark-theme-bg: #1f2937;
-  /* neutral-300 */
   --dark-theme-text: #d4d4d4;
-  /* red-700 */
   --red: #b91c1c;
-  /* neutral-800 */
   --dark-text: #262626;
-  /* neutral-600 */
   --dark-gray: #525252;
-  /* neutral-500 */
   --neutral-gray: #737373;
-  /* neutral-50 */
   --light-gray: #fafafa;
-}
+} */
 
 /* .dark-theme {
   background-color: var(--dark-bg);
@@ -51,6 +44,13 @@
     @apply cursor-pointer;
   }
 } */
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  max-height: 150px;
+}
 
 body {
   font-family: Lexend;

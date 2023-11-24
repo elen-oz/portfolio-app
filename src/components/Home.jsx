@@ -2,7 +2,7 @@ import { useTheme } from '../hooks/useTheme';
 import { Link } from 'react-scroll';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import MyName from '../assets/my-name.png';
-import mainStyles from '../styles/main.module.css';
+import mainStyles from '../styles/Main.module.css';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
 
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
-      <div name='home' className={styles.home}>
+      <div name='home' className={mainStyles.section}>
         {/* container */}
         <div className={styles.container}>
           <p className={styles.greeting}>Hi! I am</p>
