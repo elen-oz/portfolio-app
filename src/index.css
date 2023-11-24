@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
+/* reset styles instead of tailwind base */
+@import 'node_modules/modern-normalize/modern-normalize.css';
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +9,6 @@
 @layer base {
   body {
     @apply font-[Lexend];
-    /* @apply bg-neutral-50; */
     @apply bg-stone-50;
     @apply text-neutral-800;
   }
@@ -34,14 +35,30 @@
   --light-gray: #fafafa;
 }
 
-.dark-theme {
+/* .dark-theme {
   background-color: var(--dark-bg);
+  color: var(--dark-text);
+} */
+
+/* @layer base {
+  body {
+    @apply font-[Lexend];
+    @apply bg-stone-50;
+    @apply text-neutral-800;
+  }
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+} */
+
+body {
+  font-family: Lexend;
+  background-color: var(--light-gray);
   color: var(--dark-text);
 }
 
-.content-div {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  max-height: 150px;
+li {
+  padding: 0 1rem;
+  cursor: pointer;
 }
