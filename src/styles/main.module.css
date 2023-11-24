@@ -55,6 +55,16 @@ a {
   height: 100vh;
 }
 
+.first {
+  /* position: relative;
+  top: 5rem; */
+  padding-top: 4rem;
+}
+
+.last {
+  height: calc(100vh - 8rem);
+}
+
 .container {
   max-width: 900px;
   height: 100%;
@@ -63,13 +73,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  border: 2px solid pink;
-}
-
-.last {
-  height: calc(100vh - 8rem);
-  border: 2px solid red;
 }
 
 .title {

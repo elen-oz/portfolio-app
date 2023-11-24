@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
-      <div className={`${mainStyles.section} ${styles.last}`}>
+      <div className={`${mainStyles.section} ${mainStyles.last}`}>
         <div name='contact' className={mainStyles.container}>
           <form
             method='POST'

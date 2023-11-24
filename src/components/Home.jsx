@@ -10,7 +10,8 @@ const Home = () => {
 
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
-      <div name='home' className={mainStyles.section}>
+      {/* {`${mainStyles.section} ${mainStyles.first}`} */}
+      <div name='home' className={`${mainStyles.section} ${mainStyles.first}`}>
         {/* container */}
         <div className={mainStyles.container}>
           <p className={styles.greeting}>Hi! I am</p>
