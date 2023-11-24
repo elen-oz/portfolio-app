@@ -14,8 +14,8 @@ const Work = () => {
 
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
-      {error && <p className='error'>{error}</p>}
-      {isPending && <p className='loading'>Loading...</p>}
+      {error && <p className={styles.error}>{error}</p>}
+      {isPending && <p className={styles.loading}>Loading...</p>}
       {data && <ProjectList data={data} />}
     </div>
   );
