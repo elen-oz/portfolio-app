@@ -17,7 +17,7 @@ const ProjectList = () => {
   };
 
   return (
-    <div className={darkMode ? 'dark' : ''}>
+    <div className={darkMode ? mainStyles.darkTheme : ''}>
       <div
         name='work'
         className='w-full md:h-screen dark:bg-gray-800 dark:text-neutral-300'

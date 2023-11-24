@@ -23,7 +23,7 @@ function NavBar() {
   };
 
   return (
-    <div className={darkMode ? 'dark' : ''}>
+    <div className={darkMode ? mainStyles.darkTheme : ''}>
       <div className='fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700 bg-stone-50 dark:bg-gray-800 dark:text-neutral-300'>
         {/* -------------Social Links Header------------- */}
         <ul className='md:hidden flex flex-row'>

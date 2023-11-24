@@ -6,7 +6,7 @@ const Contact = () => {
   const { darkMode } = useTheme();
 
   return (
-    <div className={darkMode ? 'dark' : ''}>
+    <div className={darkMode ? mainStyles.darkTheme : ''}>
       <div className='max-w-full dark:bg-gray-800 dark:text-neutral-300'>
         <div
           name='contact'

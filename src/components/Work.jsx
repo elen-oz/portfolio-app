@@ -13,7 +13,7 @@ const Work = () => {
   const { darkMode } = useTheme();
 
   return (
-    <div id='work' className={darkMode ? 'dark' : ''}>
+    <div className={darkMode ? mainStyles.darkTheme : ''}>
       {error && <p className='error'>{error}</p>}
       {isPending && <p className='loading'>Loading...</p>}
       {data && <ProjectList data={data} />}

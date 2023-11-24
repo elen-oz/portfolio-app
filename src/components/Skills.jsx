@@ -18,7 +18,7 @@ const Skills = () => {
   const { darkMode } = useTheme();
 
   return (
-    <div className={darkMode ? 'dark' : ''}>
+    <div className={darkMode ? mainStyles.darkTheme : ''}>
       <div
         name='skills'
         className='w-full h-screen dark:bg-gray-800 dark:text-neutral-300'

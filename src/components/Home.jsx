@@ -12,7 +12,7 @@ const Home = () => {
     <div className={darkMode ? mainStyles.darkTheme : ''}>
       <div name='home' className={mainStyles.section}>
         {/* container */}
-        <div className={styles.container}>
+        <div className={mainStyles.container}>
           <p className={styles.greeting}>Hi! I am</p>
           {/* <h1 className='text-4xl sm:text-7xl font-bold'>Elena</h1> */}
           <h1>
