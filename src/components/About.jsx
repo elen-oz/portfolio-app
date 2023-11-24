@@ -11,8 +11,8 @@ const About = () => {
         {/* container-- */}
         <div className={mainStyles.container}>
           <div className={styles.grid}>
-            <div className={styles.title}>
-              <p className={styles.heading}>About</p>
+            <div className={styles.titleContainer}>
+              <p className={mainStyles.title}>About</p>
             </div>
             <div></div>
           </div>

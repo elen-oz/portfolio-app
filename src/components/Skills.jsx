@@ -19,49 +19,44 @@ const Skills = () => {
 
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
-      <div
-        name='skills'
-        className='w-full h-screen dark:bg-gray-800 dark:text-neutral-300'
-      >
+      <div name='skills' className={mainStyles.section}>
         {/* container */}
-        <div className='container max-w-[900px] mx-auto flex flex-col justify-center w-full h-full'>
+        <div className={mainStyles.container}>
           <div>
-            <p className='text-4xl font-bold inline border-b-4 border-red-700'>
-              Skills
-            </p>
-            <p className='py-4'>
+            <p className={mainStyles.title}>Skills</p>
+            <p className={mainStyles.subtitle}>
               &#47;&#47; These are the technologies I&apos;ve worked with
             </p>
           </div>
 
-          <div className='w-full grid grid-cols-3 sm:grid-cols-5 gap-4 text-center py-8'>
-            <div className='rounded-sm  shadow-md shadow-[#dcdcdc] dark:shadow-gray-900 hover:scale-110 duration-500'>
-              <img className='w-20 mx-auto' src={Html} alt='HTNL icon' />
-              <p className='my-4'>HTML</p>
+          <div className={styles.grid}>
+            <div className={styles.item}>
+              <img className={styles.itemImg} src={Html} alt='HTML icon' />
+              <p className={styles.itemText}>html</p>
             </div>
 
-            <div className='rounded-sm shadow-md shadow-[#dcdcdc] dark:shadow-gray-900 hover:scale-110 duration-500'>
-              <img className='w-20 mx-auto' src={Css} alt='CSS icon' />
-              <p className='my-4'>CSS</p>
+            <div className={styles.item}>
+              <img className={styles.itemImg} src={Css} alt='CSS icon' />
+              <p className={styles.itemText}>css</p>
             </div>
 
-            <div className='rounded-sm shadow-md shadow-[#dcdcdc] dark:shadow-gray-900 hover:scale-110 duration-500'>
+            <div className={styles.item}>
               <img
-                className='w-20 mx-auto'
+                className={styles.itemImg}
                 src={Javascript}
                 alt='JavaScript icon'
               />
-              <p className='my-4'>JAVASCRIPT</p>
+              <p className={styles.itemText}>javascript</p>
             </div>
 
-            <div className='rounded-sm shadow-md shadow-[#dcdcdc] dark:shadow-gray-900 hover:scale-110 duration-500'>
-              <img className='w-20 mx-auto' src={ReactImg} alt='React icon' />
-              <p className='my-4'>REACT</p>
+            <div className={styles.item}>
+              <img className={styles.itemImg} src={ReactImg} alt='React icon' />
+              <p className={styles.itemText}>react.js</p>
             </div>
 
-            <div className='rounded-sm shadow-md shadow-[#dcdcdc] dark:shadow-gray-900 hover:scale-110 duration-500'>
-              <img className='w-20 mx-auto' src={Github} alt='GitHub icon' />
-              <p className='my-4'>GITHUB</p>
+            <div className={styles.item}>
+              <img className={styles.itemImg} src={Github} alt='GitHub icon' />
+              <p className={styles.itemText}>github</p>
             </div>
           </div>
         </div>

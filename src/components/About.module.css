@@ -8,7 +8,7 @@
 }
 
 /* 'sm:text-right pb-8' */
-.title {
+.titleContainer {
   text-align: end;
   padding-bottom: 2rem;
 }
