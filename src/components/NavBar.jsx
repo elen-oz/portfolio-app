@@ -26,11 +26,8 @@ function NavBar() {
     <div className={darkMode ? mainStyles.darkTheme : ''}>
       <div className={styles.header}>
         {/* -------------Social Links Header------------- */}
-        {/* <ul className='md:hidden flex flex-row'> */}
         <ul className={styles.socialLinks}>
-          {/* <li className='flex justify-center items-center px-0'> */}
           <li className={styles.socialLinksItem}>
-            {/* <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'> */}
             <div className={styles.socialLinksContent}>
               <a
                 className={styles.socialLinksLink}
@@ -82,10 +79,10 @@ function NavBar() {
         </ul>
 
         {/* -------------Header Menu------------- */}
-        <ul className='hidden md:flex'>
+        <ul className={styles.headerMenu}>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-700'
+              className={styles.menuItem}
               to='about'
               smooth={true}
               duration={500}
@@ -95,7 +92,7 @@ function NavBar() {
           </li>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-700'
+              className={styles.menuItem}
               to='skills'
               smooth={true}
               duration={500}
@@ -105,7 +102,7 @@ function NavBar() {
           </li>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-700'
+              className={styles.menuItem}
               to='work'
               smooth={true}
               duration={500}
@@ -115,7 +112,7 @@ function NavBar() {
           </li>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-700'
+              className={styles.menuItem}
               to='contact'
               smooth={true}
               duration={500}
