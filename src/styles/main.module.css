@@ -99,4 +99,5 @@ a {
 .button:hover {
   color: var(--main-light);
   background-color: var(--accent);
+  box-shadow: var(--shadow-l);
 }
