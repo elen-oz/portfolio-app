@@ -62,8 +62,6 @@
 
 /* ------Header Menu------ */
 
-/* 'hidden md:flex' */
-
 .headerMenu {
   visibility: hidden;
 }
@@ -75,10 +73,89 @@
   }
 }
 
-/* 'hover:border-b-2 hover:border-red-700' to='about' */
 .menuItem {
   transition: 0.2s;
 }
 .menuItem:hover {
   border-bottom: 3px solid var(--accent);
 }
+
+/* ----- LOGO container -------- */
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.darkMode:hover {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+/* ------ Logo -------- */
+
+.logoContainer {
+  padding: 1rem;
+  margin-left: 1rem;
+}
+.logoContainer:hover {
+  cursor: pointer;
+}
+
+.logo {
+  width: 5.6rem;
+}
+
+/* -------- Hamburger -------- */
+
+.hamburgerIcon {
+  z-index: 10;
+  padding: 1rem;
+}
+.hamburgerIcon:hover {
+  color: var(--accent);
+}
+@media (min-width: 768px) {
+  .hamburgerIcon {
+    visibility: hidden;
+  }
+}
+
+/* ------ Mobile menu ------- */
+
+/* 'absolute top-[80px] right-0 w-1/3 h-screen flex flex-col justify-start items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300' */
+
+.mobileMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main);
+  color: var(--main-light);
+}
+
+/* todo: mobile version */
+.mobileMenuItem {
+  padding: 1.5rem 0;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.mobileMenuItem:hover {
+  color: var(--accent);
+}
+
+/* ------ Social Icons left side ----- */

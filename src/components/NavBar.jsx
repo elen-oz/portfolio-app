@@ -122,46 +122,37 @@ function NavBar() {
           </li>
         </ul>
 
-        <div className='flex justify-center items-center'>
-          <div className='flex justify-center items-center ml-[20px]'>
+        {/* ---------- LOGO container ----------- */}
+        <div className={styles.logoContainer}>
+          <div className={styles.darkMode}>
             <CgDarkMode onClick={handleMode} />
           </div>
 
-          {/* Logo */}
-          <div className='hover:cursor-pointer p-[10px] ml-[20px]'>
+          <div className={styles.logoContainer}>
             <Link to='home' smooth={true} duration={500}>
-              <img src={Logo} alt='Logo Image' style={{ width: '90px' }} />
+              <img src={Logo} alt='Logo Image' className={styles.logo} />
             </Link>
           </div>
 
-          {/* Hamburger */}
-          <div
-            onClick={handleClick}
-            className='md:hidden z-10 hover:text-red-700 p-[10px]'
-          >
+          {/* ----------- Hamburger -------------- */}
+          <div onClick={handleClick} className={styles.hamburgerIcon}>
             {!nav ? <FaBars /> : <FaTimes />}
           </div>
         </div>
 
-        {/* Mobile menu */}
-        <ul
-          className={
-            !nav
-              ? 'hidden'
-              : 'absolute top-[80px] right-0 w-1/3 h-screen flex flex-col justify-start items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
-          }
-        >
-          <li className='py-6 text-3xl hover:text-red-700'>
+        {/* ---------- Mobile menu ----------- */}
+        <ul className={!nav ? 'hidden' : styles.mobileMenu}>
+          <li className={styles.mobileMenuItem}>
             <Link onClick={handleClick} to='home' smooth={true} duration={500}>
               Home
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-700'>
+          <li className={styles.mobileMenuItem}>
             <Link onClick={handleClick} to='about' smooth={true} duration={500}>
               About
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-700'>
+          <li className={styles.mobileMenuItem}>
             <Link
               onClick={handleClick}
               to='skills'
@@ -171,12 +162,12 @@ function NavBar() {
               Skills
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-700'>
+          <li className={styles.mobileMenuItem}>
             <Link onClick={handleClick} to='work' smooth={true} duration={500}>
               Work
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-700'>
+          <li className={styles.mobileMenuItem}>
             <Link
               onClick={handleClick}
               to='contact'
@@ -188,7 +179,7 @@ function NavBar() {
           </li>
         </ul>
 
-        {/* Social Icons on the left */}
+        {/* ---------- Social Icons left side ------- */}
         <div className='hidden md:flex fixed flex-col top-[35%] md:top-[14%] left-0'>
           <ul>
             <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-neutral-800 hover:text-red-700  dark:bg-gray-800 dark:text-neutral-300'>
