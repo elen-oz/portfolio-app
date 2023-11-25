@@ -1,0 +1,146 @@
+@import '../styles/Main.module.css';
+
+/* 'flex justify-center items-start overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none' */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow-x: hidden;
+  overflow-y: auto; */
+  overflow: hidden;
+
+  position: fixed;
+
+  inset: 0px;
+
+  z-index: 50;
+  /* ? */
+  outline: none;
+}
+.container:hover {
+  /* ? */
+  outline: none;
+}
+
+/* 'relative w-auto my-6 mx-auto max-w-3xl' */
+.innerContainer {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+
+  margin: 4rem auto;
+  max-width: 48rem;
+}
+
+/* 'border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none' */
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  border: 0;
+  background-color: var(--main-light);
+  outline: none;
+  box-shadow: var(--shadow-md);
+}
+.content:focus {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 2rem 2rem 1rem;
+}
+
+/* 'p-1 ml-auto bg-transparent border-0 float-right text-3xl leading-none font-semibold outline-none focus:outline-none' */
+.closeButtonCrossSign {
+  padding: 1rem;
+  margin-left: auto;
+  border: 0;
+  float: right;
+  outline: none;
+}
+
+.closeButtonCrossSign:focus {
+  outline: none;
+}
+
+/* bg-transparent text-neutral-700 h-6 w-6 text-2xl block' */
+.crossSign {
+  color: var(--main-dark);
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* 'relative p-6 flex-auto' */
+.contentContainer {
+  position: relative;
+  padding: 0 1.5rem;
+  flex: auto;
+}
+
+/* 'my-4 text-neutral-600 text-lg leading-relaxed text-left' */
+.projectDescription {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  line-height: 1.625;
+  letter-spacing: -0.02em;
+}
+
+/* 'flex items-center justify-between p-6 border-t border-solid border-slate-200 rounded-b' */
+.modalFooter {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 'bg-neutral-600  text-white active:bg-neutral-400 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:bg-neutral-800 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150' */
+
+.modalButton {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  transition: 0.2s;
+}
+.modalButton:hover {
+  outline: none;
+  box-shadow: var(--shadow-l);
+}
+
+.buttonGithub {
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+.buttonGithub:hover {
+  color: var(--main-light);
+  background-color: var(--accent);
+}
+
+.buttonLive {
+  margin-left: 1rem;
+  color: var(--main-light);
+  background-color: var(--accent);
+  border: 2px solid var(--accent);
+}
+.buttonLive:hover {
+  color: var(--accent);
+  background-color: var(--main-light);
+}
+
+.closeButton {
+  color: var(--main-dark);
+  font-weight: 700;
+  border: 2px solid var(--main-dark);
+}
+.closeButton:hover {
+  color: var(--main-light);
+  background-color: var(--gray);
+}
