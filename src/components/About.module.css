@@ -7,13 +7,11 @@
   gap: 2rem;
 }
 
-/* 'sm:text-right pb-8' */
 .titleContainer {
   text-align: end;
   padding-bottom: 2rem;
 }
 
-/* 'text-4xl font-bold inline border-b-4 border-red-700' */
 .heading {
   font-size: 2rem;
   font-weight: 700;
@@ -21,7 +19,6 @@
   display: inline;
 }
 
-/*  'w-full grid sm:grid-cols-2 gap-8' */
 .content {
   width: 100%;
   display: grid;
@@ -29,7 +26,6 @@
   gap: 2rem;
 }
 
-/* 'sm:text-right text-3xl font-bold' */
 .intro {
   text-align: end;
   font-size: 1.875rem;
@@ -37,7 +33,6 @@
   font-weight: 700;
 }
 
-/* 'text-neutral-500' */
 .text {
   color: var(--main);
 }

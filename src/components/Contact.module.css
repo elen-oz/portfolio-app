@@ -1,6 +1,5 @@
 @import '../styles/Main.module.css';
 
-/* 'flex flex-col max-w-[600px] w-full my-0' */
 .form {
   margin: 0 auto;
   display: flex;

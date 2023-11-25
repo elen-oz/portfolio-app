@@ -1,6 +1,5 @@
 @import '../styles/Main.module.css';
 
-/* 'w-full grid grid-cols-3 sm:grid-cols-5 gap-4 text-center py-8' */
 .grid {
   width: 100%;
   display: grid;
@@ -10,7 +9,6 @@
   padding: 2rem 0;
 }
 
-/* 'rounded-sm  shadow-md shadow-[#dcdcdc] dark:shadow-gray-900 hover:scale-110 duration-500' */
 .item {
   border-radius: 4px;
   box-shadow: var(--shadow-md);
@@ -21,14 +19,12 @@
   box-shadow: var(--shadow-l);
 }
 
-/* 'w-20 mx-auto' */
 .itemImg {
   width: 5rem;
   margin: 0 auto;
   padding-top: 1rem;
 }
 
-/* 'my-4' */
 .itemText {
   margin: 1rem 0;
   text-transform: uppercase;
