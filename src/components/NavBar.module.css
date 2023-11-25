@@ -1,7 +1,5 @@
 @import '../styles/Main.module.css';
 
-/* 'fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700 bg-stone-50 dark:bg-gray-800 dark:text-neutral-300' */
-
 .header {
   position: fixed;
   width: 100%;
@@ -11,7 +9,7 @@
   align-items: center;
   padding: 0 1rem;
 
-  background-color: rgba(255, 255, 255, 0.1); /* Прозрачный красный фон */
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 }
 
@@ -92,7 +90,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 1rem;
+  padding: 1rem;
   transition: 0.2s;
 }
 .darkMode:hover {
@@ -103,8 +101,8 @@
 /* ------ Logo -------- */
 
 .logoContainer {
-  padding: 1rem;
-  margin-left: 1rem;
+  /* padding: 1rem; */
+  margin: 0 1rem;
 }
 .logoContainer:hover {
   cursor: pointer;
@@ -125,13 +123,11 @@
 }
 @media (min-width: 768px) {
   .hamburgerIcon {
-    visibility: hidden;
+    display: none;
   }
 }
 
 /* ------ Mobile menu ------- */
-
-/* 'absolute top-[80px] right-0 w-1/3 h-screen flex flex-col justify-start items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300' */
 
 .mobileMenu {
   position: absolute;
@@ -148,7 +144,6 @@
   color: var(--main-light);
 }
 
-/* todo: mobile version */
 .mobileMenuItem {
   padding: 1.5rem 0;
   font-size: 1.875rem;
@@ -159,3 +154,39 @@
 }
 
 /* ------ Social Icons left side ----- */
+
+.leftMenu {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .leftMenu {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    top: 13rem;
+  }
+}
+
+.leftMenuItem {
+  width: 10rem;
+  height: 3.75rem;
+  margin-left: -6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-light);
+  transition: 0.3s;
+}
+.leftMenuItem:hover {
+  color: var(--accent);
+  margin-left: 0.65rem;
+}
+
+.leftMenuLink {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -180,11 +180,11 @@ function NavBar() {
         </ul>
 
         {/* ---------- Social Icons left side ------- */}
-        <div className='hidden md:flex fixed flex-col top-[35%] md:top-[14%] left-0'>
+        <div className={styles.leftMenu}>
           <ul>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-neutral-800 hover:text-red-700  dark:bg-gray-800 dark:text-neutral-300'>
+            <li className={styles.leftMenuItem}>
               <a
-                className='flex justify-between items-center w-full'
+                className={styles.leftMenuLink}
                 href='https://www.linkedin.com/in/elen-oz/'
                 target='_blank'
                 rel='noreferrer'
@@ -193,9 +193,9 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-neutral-800 hover:text-red-700  dark:bg-gray-800 dark:text-neutral-300'>
+            <li className={styles.leftMenuItem}>
               <a
-                className='flex justify-between items-center w-full'
+                className={styles.leftMenuLink}
                 href='https://github.com/elen-oz'
                 target='_blank'
                 rel='noreferrer'
@@ -204,18 +204,18 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-neutral-800 hover:text-red-700 dark:bg-gray-800 dark:text-neutral-300'>
+            <li className={styles.leftMenuItem}>
               <a
-                className='flex justify-between items-center w-full'
+                className={styles.leftMenuLink}
                 href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
               >
                 Email <HiOutlineMail size={30} />
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 ttext-neutral-800 hover:text-red-700 dark:bg-gray-800 dark:text-neutral-300'>
+            <li className={styles.leftMenuItem}>
               <a
-                className='flex justify-between items-center w-full'
+                className={styles.leftMenuLink}
                 href='Elena_CV.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
