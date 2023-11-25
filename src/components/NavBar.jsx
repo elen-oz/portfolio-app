@@ -24,14 +24,16 @@ function NavBar() {
 
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
-      {/* <div className='fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700 bg-stone-50 dark:bg-gray-800 dark:text-neutral-300'> */}
       <div className={styles.header}>
         {/* -------------Social Links Header------------- */}
-        <ul className='md:hidden flex flex-row'>
-          <li className='flex justify-center items-center px-0'>
-            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'>
+        {/* <ul className='md:hidden flex flex-row'> */}
+        <ul className={styles.socialLinks}>
+          {/* <li className='flex justify-center items-center px-0'> */}
+          <li className={styles.socialLinksItem}>
+            {/* <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'> */}
+            <div className={styles.socialLinksContent}>
               <a
-                className='flex items-center p-[20px]'
+                className={styles.socialLinksLink}
                 href='https://www.linkedin.com/in/elen-oz/'
                 target='_blank'
                 rel='noreferrer'
@@ -41,10 +43,10 @@ function NavBar() {
             </div>
           </li>
 
-          <li className=' flex items-center px-0'>
-            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300  hover:text-red-700 hover:scale-110 duration-500'>
+          <li className={styles.socialLinksItem}>
+            <div className={styles.socialLinksContent}>
               <a
-                className='flex items-center p-[20px]'
+                className={styles.socialLinksLink}
                 href='https://github.com/elen-oz'
                 target='_blank'
                 rel='noreferrer'
@@ -54,10 +56,10 @@ function NavBar() {
             </div>
           </li>
 
-          <li className=' flex justify-between items-center px-0'>
-            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'>
+          <li className={styles.socialLinksItem}>
+            <div className={styles.socialLinksContent}>
               <a
-                className='flex items-center p-[20px]'
+                className={styles.socialLinksLink}
                 href='mailto: ozerova.lenka@gmail.com?subject=Site Portfolio Mail'
               >
                 <HiOutlineMail size={20} />
@@ -65,10 +67,10 @@ function NavBar() {
             </div>
           </li>
 
-          <li className=' flex justify-between items-center px-0'>
-            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'>
+          <li className={styles.socialLinksItem}>
+            <div className={styles.socialLinksContent}>
               <a
-                className='flex items-center p-[20px]'
+                className={styles.socialLinksLink}
                 href='Elena_CV.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
