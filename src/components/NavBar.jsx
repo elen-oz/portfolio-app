@@ -183,11 +183,6 @@ function NavBar() {
         {/* <div className={darkMode ? mainStyles.darkTheme : ''}> */}
         <div className={styles.leftMenu}>
           <ul>
-            {/* {
-            darkMode
-              ? `${mainStyles.darkTheme} ${styles.leftMenuItem}`
-              : `${styles.leftMenuItem}`
-          } */}
             <li
               className={
                 darkMode

@@ -1,14 +1,28 @@
 import parse from 'html-react-parser';
-// import mainStyles from '../styles/Main.module.css';
+import { useTheme } from '../hooks/useTheme';
+import mainStyles from '../styles/Main.module.css';
 import styles from './ModalProject.module.css';
 
 const ModalProject = ({ setShowModal, project }) => {
+  const { darkMode } = useTheme();
+
   return (
     <>
+      {/* {
+            darkMode
+              ? `${mainStyles.darkTheme} ${styles.content}`
+              : `${styles.content}`
+          } */}
       <div className={styles.container}>
         <div className={styles.innerContainer}>
           {/*content*/}
-          <div className={styles.content}>
+          <div
+            className={
+              darkMode
+                ? `${mainStyles.darkTheme} ${styles.content}`
+                : `${styles.content}`
+            }
+          >
             {/*header*/}
             <div className={styles.header}>
               <h3 className={styles.title}>Project: {project.name}</h3>
