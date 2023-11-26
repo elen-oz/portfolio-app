@@ -15,6 +15,8 @@ function NavBar() {
 
   const { darkMode, switchMode } = useTheme();
 
+  console.log('local storage', window.localStorage.getItem('isDarkMode'));
+
   const handleClick = () => setNav(!nav);
 
   const handleMode = () => {

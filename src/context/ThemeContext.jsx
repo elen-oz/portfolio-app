@@ -7,8 +7,13 @@ export const ThemeProvider = ({ children }) => {
 
   const switchMode = () => {
     setDarkMode(!darkMode);
-    console.log('darkMode', darkMode);
+    window.localStorage.setItem('isDarkMode', !darkMode);
+    console.log('darkMode', !darkMode);
   };
 
-  return <ThemeContext.Provider value={{ darkMode, switchMode }}>{children}</ThemeContext.Provider>;
+  return (
+    <ThemeContext.Provider value={{ darkMode, switchMode }}>
+      {children}
+    </ThemeContext.Provider>
+  );
 };
