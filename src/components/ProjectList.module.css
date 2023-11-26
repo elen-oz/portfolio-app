@@ -3,8 +3,6 @@
 .projectsContainer {
   display: grid;
   gap: 1rem;
-
-  border: 2px solid pink;
 }
 
 @media (min-width: 590px) {
