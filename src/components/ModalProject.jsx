@@ -8,11 +8,6 @@ const ModalProject = ({ setShowModal, project }) => {
 
   return (
     <>
-      {/* {
-            darkMode
-              ? `${mainStyles.darkTheme} ${styles.content}`
-              : `${styles.content}`
-          } */}
       <div className={styles.container}>
         <div className={styles.innerContainer}>
           {/*content*/}
@@ -25,7 +20,7 @@ const ModalProject = ({ setShowModal, project }) => {
           >
             {/*header*/}
             <div className={styles.header}>
-              <h3 className={styles.title}>Project: {project.name}</h3>
+              <h3 className={styles.title}>&#47;&#47;&nbsp;{project.name}</h3>
               <button
                 className={styles.closeButtonCrossSign}
                 onClick={() => setShowModal(false)}
