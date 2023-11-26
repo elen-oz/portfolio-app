@@ -10,3 +10,20 @@
 .btnContainer {
   margin: 2rem auto;
 }
+
+.form {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.darkThemeForm {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: var(--main-dark) !important;
+  color: var(--main-light) !important;
+}
+
+input:-webkit-autofill.darkThemeForm {
+  background-color: transparent !important;
+  color: var(--main-light) !important;
+}

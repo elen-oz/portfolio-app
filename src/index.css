@@ -2,6 +2,19 @@
 /* reset styles instead of tailwind base */
 @import '../node_modules/modern-normalize/modern-normalize.css';
 
+/* --------- RESET ------------ */
+/* Стили для подсказок в Chrome и Safari */
+input:-webkit-autofill {
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s; /* Добавьте плавный переход */
+}
+
+/* Стили для подсказок в Firefox */
+input:-moz-placeholder {
+  background-color: transparent !important;
+  transition: background-color 5000s ease-in-out 0s; /* Добавьте плавный переход */
+}
+/* ------------------------------------------------------------------- */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -43,13 +56,6 @@
     @apply px-4;
     @apply cursor-pointer;
   }
-} */
-
-/* .content-div {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  max-height: 150px;
 } */
 
 body {
