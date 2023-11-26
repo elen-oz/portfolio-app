@@ -1,8 +1,5 @@
 @import '../styles/Main.module.css';
 
-li {
-  list-style: inside;
-}
 .container {
   display: flex;
   justify-content: center;
@@ -80,6 +77,10 @@ li {
   font-size: 1.2rem;
   line-height: 1.625;
   letter-spacing: -0.02em;
+}
+
+.projectDescription li {
+  list-style: inside;
 }
 
 .modalFooter {
