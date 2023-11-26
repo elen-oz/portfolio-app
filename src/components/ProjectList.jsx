@@ -27,16 +27,13 @@ const ProjectList = () => {
             </p>
           </div>
 
-          {/* container for projects */}
           <div className={styles.projectsContainer}>
-            {/* ---grid item--- */}
             {data.map((item, index) => (
               <div
                 key={index}
                 style={{ backgroundImage: `url(${item.image})` }}
                 className={styles.projectItem}
               >
-                {/* hover effects for images */}
                 <div className={styles.hoverItem}>
                   <div className={styles.itemContent}>
                     <span className={styles.name}>{item.name}</span>

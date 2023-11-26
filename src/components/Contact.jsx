@@ -21,7 +21,6 @@ const Contact = () => {
                 &#47;&#47; Submit the form below to contact me
               </p>
             </div>
-            {/* {darkMode ? mainStyles.darkTheme : ''} */}
             <input
               className={darkMode ? styles.darkThemeForm : styles.form}
               type='text'

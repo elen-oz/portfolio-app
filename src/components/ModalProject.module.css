@@ -8,11 +8,9 @@
   position: fixed;
   inset: 0px;
   z-index: 50;
-  /* ? */
   outline: none;
 }
 .container:hover {
-  /* ? */
   outline: none;
 }
 

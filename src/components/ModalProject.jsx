@@ -10,7 +10,6 @@ const ModalProject = ({ setShowModal, project }) => {
     <>
       <div className={styles.container}>
         <div className={styles.innerContainer}>
-          {/*content*/}
           <div
             className={
               darkMode
@@ -18,7 +17,6 @@ const ModalProject = ({ setShowModal, project }) => {
                 : `${styles.content}`
             }
           >
-            {/*header*/}
             <div className={styles.header}>
               <h3 className={styles.title}>&#47;&#47;&nbsp;{project.name}</h3>
               <button
@@ -28,14 +26,14 @@ const ModalProject = ({ setShowModal, project }) => {
                 <span className={styles.crossSign}>×</span>
               </button>
             </div>
-            {/*body*/}
+
             <div className={styles.contentContainer}>
               <img src={project.image} />
               <p className={styles.projectDescription}>
                 {parse(project.description)}
               </p>
             </div>
-            {/*footer*/}
+
             <div className={styles.modalFooter}>
               <div>
                 <a href={project.github} target='_blank' rel='noreferrer'>

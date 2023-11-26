@@ -180,7 +180,6 @@ function NavBar() {
         </ul>
 
         {/* ---------- Social Icons left side ------- */}
-        {/* <div className={darkMode ? mainStyles.darkTheme : ''}> */}
         <div className={styles.leftMenu}>
           <ul>
             <li

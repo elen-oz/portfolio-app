@@ -10,12 +10,9 @@ const Home = () => {
 
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
-      {/* {`${mainStyles.section} ${mainStyles.first}`} */}
       <div name='home' className={`${mainStyles.section} ${mainStyles.first}`}>
-        {/* container */}
         <div className={mainStyles.container}>
           <p className={styles.greeting}>Hi! I am</p>
-          {/* <h1 className='text-4xl sm:text-7xl font-bold'>Elena</h1> */}
           <h1>
             <img
               src={MyName}

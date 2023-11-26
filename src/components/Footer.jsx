@@ -1,4 +1,3 @@
-import mainStyles from '../styles/Main.module.css';
 import styles from './Footer.module.css';
 
 const Footer = () => {

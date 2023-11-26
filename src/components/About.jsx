@@ -8,7 +8,6 @@ const About = () => {
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
       <div name='about' className={mainStyles.section}>
-        {/* container-- */}
         <div className={mainStyles.container}>
           <div className={styles.grid}>
             <div className={styles.titleContainer}>

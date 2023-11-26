@@ -20,7 +20,6 @@ const Skills = () => {
   return (
     <div className={darkMode ? mainStyles.darkTheme : ''}>
       <div name='skills' className={mainStyles.section}>
-        {/* container */}
         <div className={mainStyles.container}>
           <div>
             <p className={mainStyles.title}>Skills</p>
