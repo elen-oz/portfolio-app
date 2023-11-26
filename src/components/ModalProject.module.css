@@ -130,13 +130,10 @@
   background-color: var(--gray);
 }
 
-input,
-textarea {
-  outline: none;
-}
-
-input:focus,
-textarea:focus {
-  border: 2px solid var(--accent);
-  outline: none;
+.modalBackground {
+  position: fixed;
+  opacity: 0.7;
+  inset: 0px;
+  z-index: 40;
+  background-color: #000;
 }

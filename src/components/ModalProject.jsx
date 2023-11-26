@@ -68,7 +68,7 @@ const ModalProject = ({ setShowModal, project }) => {
           </div>
         </div>
       </div>
-      <div className='opacity-50 fixed inset-0 z-40 bg-black'></div>
+      <div className={styles.modalBackground}></div>
     </>
   );
 };

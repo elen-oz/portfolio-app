@@ -27,3 +27,14 @@ input:-webkit-autofill.darkThemeForm {
   background-color: transparent !important;
   color: var(--main-light) !important;
 }
+
+input,
+textarea {
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid var(--accent);
+  outline: none;
+}
