@@ -130,3 +130,14 @@ li {
   color: var(--main-light);
   background-color: var(--gray);
 }
+
+input,
+textarea {
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid var(--accent);
+  outline: none;
+}
