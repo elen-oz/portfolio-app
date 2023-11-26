@@ -180,9 +180,21 @@ function NavBar() {
         </ul>
 
         {/* ---------- Social Icons left side ------- */}
+        {/* <div className={darkMode ? mainStyles.darkTheme : ''}> */}
         <div className={styles.leftMenu}>
           <ul>
-            <li className={styles.leftMenuItem}>
+            {/* {
+            darkMode
+              ? `${mainStyles.darkTheme} ${styles.leftMenuItem}`
+              : `${styles.leftMenuItem}`
+          } */}
+            <li
+              className={
+                darkMode
+                  ? `${styles.leftMenuItem} ${mainStyles.darkTheme}`
+                  : `${styles.leftMenuItem}`
+              }
+            >
               <a
                 className={styles.leftMenuLink}
                 href='https://www.linkedin.com/in/elen-oz/'
@@ -193,7 +205,13 @@ function NavBar() {
               </a>
             </li>
 
-            <li className={styles.leftMenuItem}>
+            <li
+              className={
+                darkMode
+                  ? `${styles.leftMenuItem} ${mainStyles.darkTheme}`
+                  : `${styles.leftMenuItem}`
+              }
+            >
               <a
                 className={styles.leftMenuLink}
                 href='https://github.com/elen-oz'
@@ -204,7 +222,13 @@ function NavBar() {
               </a>
             </li>
 
-            <li className={styles.leftMenuItem}>
+            <li
+              className={
+                darkMode
+                  ? `${styles.leftMenuItem} ${mainStyles.darkTheme}`
+                  : `${styles.leftMenuItem}`
+              }
+            >
               <a
                 className={styles.leftMenuLink}
                 href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
@@ -213,7 +237,13 @@ function NavBar() {
               </a>
             </li>
 
-            <li className={styles.leftMenuItem}>
+            <li
+              className={
+                darkMode
+                  ? `${styles.leftMenuItem} ${mainStyles.darkTheme}`
+                  : `${styles.leftMenuItem}`
+              }
+            >
               <a
                 className={styles.leftMenuLink}
                 href='Elena_CV.pdf'

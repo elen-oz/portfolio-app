@@ -43,7 +43,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   padding: 2rem 2rem 1rem;
 }
 

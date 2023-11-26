@@ -47,8 +47,8 @@ a {
 }
 
 .darkTheme {
-  background-color: var(--dark-theme-bg);
-  color: var(--dark-theme-text);
+  background-color: var(--dark-theme-bg) !important;
+  color: var(--dark-theme-text) !important;
 }
 
 .section {
