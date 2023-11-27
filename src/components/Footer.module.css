@@ -10,6 +10,12 @@
   align-items: center;
 }
 
-.list {
+.footer .list {
   display: flex;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.list li {
+  padding: 0;
 }
