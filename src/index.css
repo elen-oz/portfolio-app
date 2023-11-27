@@ -1,12 +1,2 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
-/* reset styles instead of tailwind base */
 @import '../src/styles/reset.css';
-
-/* body {
-  font-family: Lexend;
-}
-
-li {
-  padding: 0 1rem;
-  cursor: pointer;
-} */
