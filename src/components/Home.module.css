@@ -34,14 +34,6 @@
   font-size: 1rem;
 }
 
-@media (min-width: 768px) {
-  .description {
-    padding: 1rem 0;
-    max-width: 700px;
-    font-size: 1rem;
-  }
-}
-
 .btnContainer {
   margin: 0.5rem 0;
 }
