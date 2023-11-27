@@ -42,7 +42,13 @@ const Contact = () => {
                 placeholder='Message'
               ></textarea>
               <div className={styles.btnContainer}>
-                <button className={mainStyles.button}>
+                <button
+                  className={
+                    darkMode
+                      ? `${mainStyles.button} ${mainStyles.buttonDarkmode}`
+                      : mainStyles.button
+                  }
+                >
                   Let&apos;s Collaborate
                 </button>
               </div>

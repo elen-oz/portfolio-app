@@ -21,7 +21,7 @@ const Home = () => {
             />
           </h1>
 
-          <h2 className={styles.subtitle}>
+          <h2 className={styles.homeSubtitle}>
             and I love <br /> programming
           </h2>
 
@@ -32,7 +32,13 @@ const Home = () => {
           <div>
             <Link to='work' smooth={true} duration={500}>
               <div className={styles.btnContainer}>
-                <button className={mainStyles.button}>
+                <button
+                  className={
+                    darkMode
+                      ? `${mainStyles.button} ${mainStyles.buttonDarkmode}`
+                      : mainStyles.button
+                  }
+                >
                   View Work
                   <HiArrowNarrowRight className='ml-3' />
                 </button>

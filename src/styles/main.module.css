@@ -31,6 +31,7 @@ html,
 body {
   height: 100%;
   font-family: 'Lexend', sans-serif;
+  line-height: 1.5;
   color: var(--gray);
   background-color: var(--main-light);
   scroll-behavior: smooth;
@@ -79,7 +80,7 @@ a {
 }
 
 .subtitle {
-  padding: 1rem 0;
+  padding: 1rem 0 2rem;
 }
 
 .button {
@@ -94,4 +95,8 @@ a {
   color: var(--main-light);
   background-color: var(--accent);
   box-shadow: var(--shadow-l);
+}
+
+.buttonDarkmode {
+  color: var(--main-light);
 }
