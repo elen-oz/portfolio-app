@@ -1,0 +1,9 @@
+@import '../styles/Main.module.css';
+
+.error {
+  color: var(--accent-dark);
+}
+
+.loading {
+  color: var (--main);
+}

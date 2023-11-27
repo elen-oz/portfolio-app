@@ -1,0 +1,198 @@
+@import '../styles/Main.module.css';
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .header {
+    justify-content: end;
+  }
+}
+
+/* ----------Social Links Header----------- */
+
+.socialLinks {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .socialLinks {
+    visibility: hidden;
+  }
+}
+
+.socialLinksItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.socialLinksContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var (--main);
+  transition: 0.5s;
+}
+.socialLinksContent:hover {
+  color: var(--accent);
+  transform: scale(1.2);
+}
+
+.socialLinksLink {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* ------Header Menu------ */
+
+.headerMenu {
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .headerMenu {
+    visibility: visible;
+    display: flex;
+  }
+}
+
+.menuItem {
+  transition: 0.2s;
+}
+.menuItem:hover {
+  border-bottom: 3px solid var(--accent);
+}
+
+/* ----- LOGO container -------- */
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkMode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transition: 0.2s;
+}
+.darkMode:hover {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+/* ------ Logo -------- */
+
+.logoContainer {
+  /* padding: 1rem; */
+  margin: 0 1rem;
+}
+.logoContainer:hover {
+  cursor: pointer;
+}
+
+.logo {
+  width: 5.6rem;
+}
+
+/* -------- Hamburger -------- */
+
+.hamburgerIcon {
+  z-index: 10;
+  padding: 1rem;
+}
+.hamburgerIcon:hover {
+  color: var(--accent);
+}
+@media (min-width: 768px) {
+  .hamburgerIcon {
+    display: none;
+  }
+}
+
+/* ------ Mobile menu ------- */
+
+.hidden {
+  display: none;
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main);
+  color: var(--main-light);
+}
+
+.mobileMenuItem {
+  padding: 1.5rem 0;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.mobileMenuItem:hover {
+  color: var(--accent);
+}
+
+/* ------ Social Icons left side ----- */
+
+.leftMenu {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .leftMenu {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    top: 13rem;
+  }
+}
+
+.leftMenuItem {
+  width: 10rem;
+  height: 3.75rem;
+  margin-left: -6.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.leftMenuItem:hover {
+  color: var(--accent);
+  margin-left: 0.65rem;
+  background-color: var(--main-light);
+}
+
+.leftMenuLink {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

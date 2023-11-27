@@ -7,10 +7,15 @@ import { CgDarkMode } from 'react-icons/cg';
 import { Link } from 'react-scroll';
 import Logo from '../assets/logo-elena.png';
 
+import mainStyles from '../styles/Main.module.css';
+import styles from './Navbar.module.css';
+
 function NavBar() {
   const [nav, setNav] = useState(false);
 
   const { darkMode, switchMode } = useTheme();
+
+  console.log('local storage', window.localStorage.getItem('isDarkMode'));
 
   const handleClick = () => setNav(!nav);
 
@@ -20,14 +25,14 @@ function NavBar() {
   };
 
   return (
-    <div className={darkMode ? 'dark' : ''}>
-      <div className='fixed w-full h-[80px] flex justify-between md:justify-end  items-center px-4 text-neutral-700 bg-stone-50 dark:bg-gray-800 dark:text-neutral-300'>
+    <div className={darkMode ? mainStyles.darkTheme : ''}>
+      <div className={styles.header}>
         {/* -------------Social Links Header------------- */}
-        <ul className='md:hidden flex flex-row'>
-          <li className='flex justify-center items-center px-0'>
-            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'>
+        <ul className={styles.socialLinks}>
+          <li className={styles.socialLinksItem}>
+            <div className={styles.socialLinksContent}>
               <a
-                className='flex items-center p-[20px]'
+                className={styles.socialLinksLink}
                 href='https://www.linkedin.com/in/elen-oz/'
                 target='_blank'
                 rel='noreferrer'
@@ -37,10 +42,10 @@ function NavBar() {
             </div>
           </li>
 
-          <li className=' flex items-center px-0'>
-            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300  hover:text-red-700 hover:scale-110 duration-500'>
+          <li className={styles.socialLinksItem}>
+            <div className={styles.socialLinksContent}>
               <a
-                className='flex items-center p-[20px]'
+                className={styles.socialLinksLink}
                 href='https://github.com/elen-oz'
                 target='_blank'
                 rel='noreferrer'
@@ -50,10 +55,10 @@ function NavBar() {
             </div>
           </li>
 
-          <li className=' flex justify-between items-center px-0'>
-            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'>
+          <li className={styles.socialLinksItem}>
+            <div className={styles.socialLinksContent}>
               <a
-                className='flex items-center p-[20px]'
+                className={styles.socialLinksLink}
                 href='mailto: ozerova.lenka@gmail.com?subject=Site Portfolio Mail'
               >
                 <HiOutlineMail size={20} />
@@ -61,10 +66,10 @@ function NavBar() {
             </div>
           </li>
 
-          <li className=' flex justify-between items-center px-0'>
-            <div className='flex justify-center items-center w-full text-neutral-600 dark:text-neutral-300 hover:text-red-700 hover:scale-110 duration-500'>
+          <li className={styles.socialLinksItem}>
+            <div className={styles.socialLinksContent}>
               <a
-                className='flex items-center p-[20px]'
+                className={styles.socialLinksLink}
                 href='Elena_CV.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
@@ -76,10 +81,10 @@ function NavBar() {
         </ul>
 
         {/* -------------Header Menu------------- */}
-        <ul className='hidden md:flex'>
+        <ul className={styles.headerMenu}>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-700'
+              className={styles.menuItem}
               to='about'
               smooth={true}
               duration={500}
@@ -89,7 +94,7 @@ function NavBar() {
           </li>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-700'
+              className={styles.menuItem}
               to='skills'
               smooth={true}
               duration={500}
@@ -99,7 +104,7 @@ function NavBar() {
           </li>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-700'
+              className={styles.menuItem}
               to='work'
               smooth={true}
               duration={500}
@@ -109,7 +114,7 @@ function NavBar() {
           </li>
           <li>
             <Link
-              className='hover:border-b-2 hover:border-red-700'
+              className={styles.menuItem}
               to='contact'
               smooth={true}
               duration={500}
@@ -119,64 +124,37 @@ function NavBar() {
           </li>
         </ul>
 
-        <div className='flex justify-center items-center'>
-          <div className='flex justify-center items-center ml-[20px]'>
+        {/* ---------- LOGO container ----------- */}
+        <div className={styles.logoContainer}>
+          <div className={styles.darkMode}>
             <CgDarkMode onClick={handleMode} />
           </div>
 
-          {/* Logo */}
-          <div className='hover:cursor-pointer p-[10px] ml-[20px]'>
-            <Link
-              to='home'
-              smooth={true}
-              duration={500}
-            >
-              <img
-                src={Logo}
-                alt='Logo Image'
-                style={{ width: '90px' }}
-              />
+          <div className={styles.logoContainer}>
+            <Link to='home' smooth={true} duration={500}>
+              <img src={Logo} alt='Logo Image' className={styles.logo} />
             </Link>
           </div>
 
-          {/* Hamburger */}
-          <div
-            onClick={handleClick}
-            className='md:hidden z-10 hover:text-red-700 p-[10px]'
-          >
+          {/* ----------- Hamburger -------------- */}
+          <div onClick={handleClick} className={styles.hamburgerIcon}>
             {!nav ? <FaBars /> : <FaTimes />}
           </div>
         </div>
 
-        {/* Mobile menu */}
-        <ul
-          className={
-            !nav
-              ? 'hidden'
-              : 'absolute top-[80px] right-0 w-1/3 h-screen flex flex-col justify-start items-center bg-stone-200 dark:bg-slate-700 dark:text-neutral-300'
-          }
-        >
-          <li className='py-6 text-3xl hover:text-red-700'>
-            <Link
-              onClick={handleClick}
-              to='home'
-              smooth={true}
-              duration={500}
-            >
+        {/* ---------- Mobile menu ----------- */}
+        <ul className={!nav ? styles.hidden : styles.mobileMenu}>
+          <li className={styles.mobileMenuItem}>
+            <Link onClick={handleClick} to='home' smooth={true} duration={500}>
               Home
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-700'>
-            <Link
-              onClick={handleClick}
-              to='about'
-              smooth={true}
-              duration={500}
-            >
+          <li className={styles.mobileMenuItem}>
+            <Link onClick={handleClick} to='about' smooth={true} duration={500}>
               About
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-700'>
+          <li className={styles.mobileMenuItem}>
             <Link
               onClick={handleClick}
               to='skills'
@@ -186,17 +164,12 @@ function NavBar() {
               Skills
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-700'>
-            <Link
-              onClick={handleClick}
-              to='work'
-              smooth={true}
-              duration={500}
-            >
+          <li className={styles.mobileMenuItem}>
+            <Link onClick={handleClick} to='work' smooth={true} duration={500}>
               Work
             </Link>
           </li>
-          <li className='py-6 text-3xl hover:text-red-700'>
+          <li className={styles.mobileMenuItem}>
             <Link
               onClick={handleClick}
               to='contact'
@@ -208,12 +181,18 @@ function NavBar() {
           </li>
         </ul>
 
-        {/* Social Icons on the left */}
-        <div className='hidden md:flex fixed flex-col top-[35%] md:top-[14%] left-0'>
+        {/* ---------- Social Icons left side ------- */}
+        <div className={styles.leftMenu}>
           <ul>
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-neutral-800 hover:text-red-700  dark:bg-gray-800 dark:text-neutral-300'>
+            <li
+              className={
+                darkMode
+                  ? `${styles.leftMenuItem} ${mainStyles.darkTheme}`
+                  : `${styles.leftMenuItem}`
+              }
+            >
               <a
-                className='flex justify-between items-center w-full'
+                className={styles.leftMenuLink}
                 href='https://www.linkedin.com/in/elen-oz/'
                 target='_blank'
                 rel='noreferrer'
@@ -222,9 +201,15 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-neutral-800 hover:text-red-700  dark:bg-gray-800 dark:text-neutral-300'>
+            <li
+              className={
+                darkMode
+                  ? `${styles.leftMenuItem} ${mainStyles.darkTheme}`
+                  : `${styles.leftMenuItem}`
+              }
+            >
               <a
-                className='flex justify-between items-center w-full'
+                className={styles.leftMenuLink}
                 href='https://github.com/elen-oz'
                 target='_blank'
                 rel='noreferrer'
@@ -233,18 +218,30 @@ function NavBar() {
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 text-neutral-800 hover:text-red-700 dark:bg-gray-800 dark:text-neutral-300'>
+            <li
+              className={
+                darkMode
+                  ? `${styles.leftMenuItem} ${mainStyles.darkTheme}`
+                  : `${styles.leftMenuItem}`
+              }
+            >
               <a
-                className='flex justify-between items-center w-full'
+                className={styles.leftMenuLink}
                 href='mailto: ozerova.lenka@gmail.com?subject=Mail from Portfolio Site'
               >
                 Email <HiOutlineMail size={30} />
               </a>
             </li>
 
-            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-stone-50 ttext-neutral-800 hover:text-red-700 dark:bg-gray-800 dark:text-neutral-300'>
+            <li
+              className={
+                darkMode
+                  ? `${styles.leftMenuItem} ${mainStyles.darkTheme}`
+                  : `${styles.leftMenuItem}`
+              }
+            >
               <a
-                className='flex justify-between items-center w-full'
+                className={styles.leftMenuLink}
                 href='Elena_CV.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
