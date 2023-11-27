@@ -63,8 +63,8 @@ sup {
 }
 
 table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
+  text-indent: 0;
+  border-color: inherit;
 }
 
 button,
@@ -134,7 +134,7 @@ summary {
   display: list-item;
 }
 
-/* ------------- from Tailwind ----------------- */
+/* ------------- my ----------------- */
 * {
   margin: 0;
   padding: 0;
@@ -192,10 +192,8 @@ a:hover {
 
 input:-webkit-autofill {
   background-color: transparent !important;
-  /* transition: background-color 5000s ease-in-out 0s; */
 }
 
 input:-moz-placeholder {
   background-color: transparent !important;
-  /* transition: background-color 5000s ease-in-out 0s; */
 }

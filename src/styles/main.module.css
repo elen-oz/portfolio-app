@@ -4,7 +4,6 @@
 :root {
   --dark-theme-bg: #1f2937;
   --dark-theme-text: #d4d4d4;
-
   --accent: #991b1b;
   --accent-dark: #7f1d1d;
   --main: #737373;
@@ -19,20 +18,20 @@
 html,
 body {
   height: 100%;
-  font-family: 'Lexend', sans-serif;
+  font-family: Lexend, sans-serif;
   line-height: 1.5;
   color: var(--gray);
   background-color: var(--main-light);
   scroll-behavior: smooth;
 }
 
-a {
-  color: inherit;
+li {
+  padding: 0 1rem;
+  cursor: pointer;
 }
 
-.darkTheme {
-  background-color: var(--dark-theme-bg) !important;
-  color: var(--dark-theme-text) !important;
+a {
+  color: inherit;
 }
 
 .section {
@@ -113,6 +112,11 @@ a {
   color: var(--main-light);
   background-color: var(--accent);
   box-shadow: var(--shadow-l);
+}
+
+.darkTheme {
+  background-color: var(--dark-theme-bg) !important;
+  color: var(--dark-theme-text) !important;
 }
 
 .buttonDarkmode {
