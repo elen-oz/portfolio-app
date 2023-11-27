@@ -13,7 +13,6 @@ const Contact = () => {
             method='POST'
             action='https://getform.io/f/21360c24-1f34-4019-8448-c3a4edffd8e2'
             className={styles.form}
-            autoComplete='off'
           >
             <div>
               <p className={mainStyles.title}>Contact</p>
@@ -26,12 +25,14 @@ const Contact = () => {
               type='text'
               placeholder='Name'
               name='name'
+              autoComplete='on'
             />
             <input
               className={darkMode ? styles.darkThemeForm : styles.form}
               type='email'
               placeholder='Email'
               name='email'
+              autoComplete='on'
             />
             <textarea
               className={darkMode ? styles.darkThemeForm : styles.form}

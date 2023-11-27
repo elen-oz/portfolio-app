@@ -143,7 +143,7 @@ function NavBar() {
         </div>
 
         {/* ---------- Mobile menu ----------- */}
-        <ul className={!nav ? 'hidden' : styles.mobileMenu}>
+        <ul className={!nav ? styles.hidden : styles.mobileMenu}>
           <li className={styles.mobileMenuItem}>
             <Link onClick={handleClick} to='home' smooth={true} duration={500}>
               Home

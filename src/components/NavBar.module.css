@@ -130,6 +130,10 @@
 
 /* ------ Mobile menu ------- */
 
+.hidden {
+  display: none;
+}
+
 .mobileMenu {
   position: absolute;
   top: 0;

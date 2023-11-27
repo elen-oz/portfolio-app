@@ -1,23 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap');
 /* reset styles instead of tailwind base */
-@import '../node_modules/modern-normalize/modern-normalize.css';
+@import '../src/styles/reset.css';
 
 /* --------- RESET ------------ */
-/* Стили для подсказок в Chrome и Safari */
-input:-webkit-autofill {
-  background-color: transparent !important;
-  transition: background-color 5000s ease-in-out 0s; /* Добавьте плавный переход */
-}
 
-/* Стили для подсказок в Firefox */
-input:-moz-placeholder {
-  background-color: transparent !important;
-  transition: background-color 5000s ease-in-out 0s; /* Добавьте плавный переход */
-}
 /* ------------------------------------------------------------------- */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base; */
+/* @tailwind components;
+@tailwind utilities; */
 
 /* @layer base {
   body {
