@@ -8,8 +8,14 @@
 }
 
 .titleContainer {
-  text-align: end;
   padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .titleContainer {
+    text-align: end;
+    padding-bottom: 2rem;
+  }
 }
 
 .heading {
@@ -22,15 +28,26 @@
 .content {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 2rem;
 }
 
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .intro {
-  text-align: end;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    text-align: end;
+  }
 }
 
 .text {

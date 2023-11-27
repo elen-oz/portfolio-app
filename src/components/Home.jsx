@@ -17,7 +17,7 @@ const Home = () => {
             <img
               src={MyName}
               alt='Elena Ozerova Frontend Developer'
-              style={{ width: '250px' }}
+              className={styles.image}
             />
           </h1>
 

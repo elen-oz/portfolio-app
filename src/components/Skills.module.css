@@ -3,10 +3,21 @@
 .grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
   text-align: center;
   padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem 0;
+  }
 }
 
 .item {

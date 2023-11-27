@@ -4,18 +4,42 @@
   color: var(--accent);
   font-size: 1.25rem;
 }
+.image {
+  width: 13rem;
+}
+
+@media (min-width: 768px) {
+  .image {
+    width: 15.6rem;
+  }
+}
 
 .homeSubtitle {
   color: var(--main);
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1;
   padding: 0.5rem 0;
 }
 
+@media (min-width: 768px) {
+  .homeSubtitle {
+    font-size: 4.5rem;
+  }
+}
+
 .description {
   padding: 1rem 0;
   max-width: 700px;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .description {
+    padding: 1rem 0;
+    max-width: 700px;
+    font-size: 1rem;
+  }
 }
 
 .btnContainer {
