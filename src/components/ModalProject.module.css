@@ -41,8 +41,30 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 2rem 2rem 1rem;
+  align-items: center;
+  padding: 1rem 2rem 0.5rem;
+}
+@media (min-width: 768px) {
+  .header {
+    align-items: flex-start;
+    padding: 2rem 2rem 1rem;
+  }
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  border-bottom: 4px solid var(--accent);
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .modalTitle {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    border-bottom: 4px solid var(--accent);
+    display: inline-block;
+  }
 }
 
 .closeButtonCrossSign {
@@ -66,8 +88,14 @@
 
 .contentContainer {
   position: relative;
-  padding: 0 1.5rem;
+  padding: 1rem;
   flex: auto;
+}
+
+@media (min-width: 768px) {
+  .contentContainer {
+    padding: 0 1.5rem;
+  }
 }
 
 .projectDescription {
@@ -82,10 +110,15 @@
 }
 
 .modalFooter {
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .modalFooter {
+    padding: 1.5rem;
+  }
 }
 
 .modalButton {
@@ -110,10 +143,20 @@
 }
 
 .buttonLive {
-  margin-left: 1rem;
+  display: none;
+  /* margin-left: 1rem;
   color: var(--main-light);
   background-color: var(--accent);
-  border: 2px solid var(--accent);
+  border: 2px solid var(--accent); */
+}
+@media (min-width: 768px) {
+  .buttonLive {
+    display: inline-block;
+    margin-left: 1rem;
+    color: var(--main-light);
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+  }
 }
 .buttonLive:hover {
   color: var(--accent);

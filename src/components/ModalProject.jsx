@@ -18,7 +18,9 @@ const ModalProject = ({ setShowModal, project }) => {
             }
           >
             <div className={styles.header}>
-              <h3 className={styles.title}>&#47;&#47;&nbsp;{project.name}</h3>
+              <h3 className={styles.modalTitle}>
+                &#47;&#47;&nbsp;{project.name}
+              </h3>
               <button
                 className={styles.closeButtonCrossSign}
                 onClick={() => setShowModal(false)}
