@@ -86,16 +86,21 @@
   gap: 1rem;
 }
 
-.button {
+.projectsButton {
   display: inline-block;
   font-size: 0.8rem;
   text-transform: uppercase;
   text-align: center;
   padding: 0.5rem 1rem;
   background-color: var(--main-light);
-  /* color: var(--gray); */
+  color: var(--gray);
   font-weight: 700;
   border: none;
+}
+.projectsButton:hover {
+  color: var(--main-light);
+  background-color: var(--accent);
+  box-shadow: var(--shadow-l);
 }
 
 .live {
