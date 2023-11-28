@@ -73,6 +73,7 @@
   border: 0;
   float: right;
   outline: none;
+  background-color: inherit;
 }
 
 .closeButtonCrossSign:focus {
@@ -80,7 +81,7 @@
 }
 
 .crossSign {
-  color: var(--main-dark);
+  color: var(--main);
   height: 1.5rem;
   width: 1.5rem;
   font-size: 1.5rem;
