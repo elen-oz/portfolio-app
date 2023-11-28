@@ -38,7 +38,7 @@ const ProjectList = () => {
                   <div className={styles.buttonContainer}>
                     <button
                       onClick={() => handleClick(item)}
-                      className={styles.modalButton}
+                      className={styles.projectsButton}
                     >
                       Show More
                     </button>
