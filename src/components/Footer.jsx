@@ -1,8 +1,14 @@
+import styles from './Footer.module.css';
+
 const Footer = () => {
   return (
-    <div className='w-full h-[3rem] bg-stone-200 text-neutral-600 flex justify-center items-center'>
-      <ul className='flex'>
-        <li>Elena Ozerova &copy;</li>
+    <div className={styles.footer}>
+      <ul className={styles.list}>
+        <li>
+          <a href='https://github.com/elen-oz' target='_blank' rel='noreferrer'>
+            Elena Ozerova &copy;
+          </a>
+        </li>
         <li>{new Date().getFullYear()}</li>
       </ul>
     </div>

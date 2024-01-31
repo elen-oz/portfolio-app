@@ -1,0 +1,183 @@
+@import '../styles/Main.module.css';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  inset: 0px;
+  z-index: 50;
+  outline: none;
+}
+.container:hover {
+  outline: none;
+}
+
+.innerContainer {
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+
+  margin: 4rem auto;
+  max-width: 48rem;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  border: 0;
+  background-color: var(--main-light);
+  outline: none;
+  box-shadow: var(--shadow-md);
+}
+.content:focus {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem 0.5rem;
+}
+@media (min-width: 768px) {
+  .header {
+    align-items: flex-start;
+    padding: 2rem 2rem 1rem;
+  }
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  border-bottom: 4px solid var(--accent);
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .modalTitle {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    border-bottom: 4px solid var(--accent);
+    display: inline-block;
+  }
+}
+
+.closeButtonCrossSign {
+  padding: 1rem;
+  margin-left: auto;
+  border: 0;
+  float: right;
+  outline: none;
+  background-color: inherit;
+}
+
+.closeButtonCrossSign:focus {
+  outline: none;
+}
+
+.crossSign {
+  color: var(--main);
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.contentContainer {
+  position: relative;
+  padding: 1rem;
+  flex: auto;
+}
+
+@media (min-width: 768px) {
+  .contentContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+.projectDescription {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  line-height: 1.625;
+  letter-spacing: -0.02em;
+}
+
+.projectDescription li {
+  list-style: inside;
+}
+
+.modalFooter {
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .modalFooter {
+    padding: 1.5rem;
+  }
+}
+
+.modalButton {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  transition: 0.2s;
+}
+.modalButton:hover {
+  outline: none;
+  box-shadow: var(--shadow-l);
+}
+
+.buttonGithub {
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+.buttonGithub:hover {
+  color: var(--main-light);
+  background-color: var(--accent);
+}
+
+.buttonLive {
+  display: none;
+  /* margin-left: 1rem;
+  color: var(--main-light);
+  background-color: var(--accent);
+  border: 2px solid var(--accent); */
+}
+@media (min-width: 768px) {
+  .buttonLive {
+    display: inline-block;
+    margin-left: 1rem;
+    color: var(--main-light);
+    background-color: var(--accent);
+    border: 2px solid var(--accent);
+  }
+}
+.buttonLive:hover {
+  color: var(--accent);
+  background-color: var(--main-light);
+}
+
+.closeButton {
+  color: var(--main-dark);
+  font-weight: 700;
+  border: 2px solid var(--main-dark);
+}
+.closeButton:hover {
+  color: var(--main-light);
+  background-color: var(--gray);
+}
+
+.modalBackground {
+  position: fixed;
+  opacity: 0.7;
+  inset: 0px;
+  z-index: 40;
+  background-color: #000;
+}
