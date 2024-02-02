@@ -16,7 +16,7 @@ const Footer = () => {
             target='_blank'
             rel='noreferrer'
           >
-            (Notion)
+            (Portfolio in Notion)
           </a>
         </li>
       </ul>
