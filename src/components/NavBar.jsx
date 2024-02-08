@@ -242,7 +242,7 @@ function NavBar() {
             >
               <a
                 className={styles.leftMenuLink}
-                href='Elena_CV.pdf'
+                href='https://rebrand.ly/elen-oz-cv'
                 target='_blank'
                 rel='noopener noreferrer'
               >
