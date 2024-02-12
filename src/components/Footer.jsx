@@ -12,7 +12,7 @@ const Footer = () => {
         <li>{new Date().getFullYear()}</li>
         <li>
           <a
-            href='https://www.notion.so/Portfolio-of-Elena-bbfdf9a7e6c54669829923d14b6cd7f6?pvs=4'
+            href='https://elen-oz.notion.site/About-Me-bbfdf9a7e6c54669829923d14b6cd7f6?pvs=4'
             target='_blank'
             rel='noreferrer'
           >
