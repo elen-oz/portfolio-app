@@ -70,7 +70,7 @@ function NavBar() {
             <div className={styles.socialLinksContent}>
               <a
                 className={styles.socialLinksLink}
-                href='Elena_CV.pdf'
+                href='https://rebrand.ly/elen-oz-cv'
                 target='_blank'
                 rel='noopener noreferrer'
               >
